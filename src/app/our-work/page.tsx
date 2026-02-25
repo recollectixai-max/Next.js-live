@@ -34,26 +34,10 @@ export default function OurWork() {
             services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
-            id: "cremure-sm",
-            name: "Cremure",
-            link: "https://www.instagram.com/cremure_",
-            image: "/media/our_work_pics/Cremure.png",
-            brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
-        },
-        {
             id: "evorea-sm",
             name: "Evorea",
             link: "https://www.instagram.com/evorea.in/",
             image: "/media/our_work_pics/evorea.png",
-            brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
-        },
-        {
-            id: "cremoria-sm",
-            name: "Cremoria",
-            link: "https://www.instagram.com/cremoria__",
-            image: "/media/our_work_pics/cremoria.png",
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },

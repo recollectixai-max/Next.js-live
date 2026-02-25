@@ -18,21 +18,6 @@ export default function ClientCaseStudy({ params }: { params: Promise<{ clientId
 
     // Data Store
     const clientData: Record<string, any> = {
-        "cremure": {
-            name: "Cremure",
-            category: "Food & Beverages",
-            services: ["Brand Identity", "Social Media", "Content Creation"],
-            year: "2024",
-            website: "https://www.instagram.com/cremure_?igsh=MnFmeHZhbjFsNmth",
-            description: "Cremure is an artisanal ice cream brand that redefines indulgence with premium ingredients and craftsmanship.",
-            story: "We partnered with Cremure to build a brand identity that reflects their commitment to quality. From logo design to a cohesive social media strategy, we established a visual language that screams luxury and flavor. Our content creation focused on mouth-watering visuals that drive engagement and foot traffic.",
-            heroImage: "/media/services_smm.png", // Valid placeholder
-            gallery: [
-                "/media/services_smm.png",
-                "/media/services_influence_marketing.png",
-                "/media/services_content_creation.png" // This might not exist, checking validity later or use safe one
-            ]
-        },
         "dales-eden": {
             name: "Dales Eden",
             category: "Food & Beverages",

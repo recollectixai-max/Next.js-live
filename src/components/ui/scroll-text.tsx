@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 type TextAnimationProps = {
     text: string;
-    as?: React.ElementType; // Use ElementType for valid React elements
+    as?: any; // Use any to bypass strange children never type error in build
     classname?: string;
     variants?: Variants;
     direction?: "left" | "right" | "up" | "down";
