@@ -46,7 +46,7 @@ export default function About() {
         { name: "Faheem Sheikh", role: "Founder & CEO", image: "/media/team_pics/ceo_faheem_sheikh.webp", initial: "F" },
         { name: "Zainul Shah", role: "Partner", image: "/media/team_pics/partner_zainul_shah.webp", initial: "Z" },
         { name: "Aysha Shaikh", role: "Manager", image: "/media/team_pics/manager_aysha_shaikh.webp", initial: "A" },
-        { name: "Farhan Sultan", role: "Web Developer", image: "/media/team_pics/web_developer_farhan_sultan.webp", initial: "F" },
+        { name: "Farhan Sultan", role: "AI Engineer", image: "/media/team_pics/ai_engineer_farhan_sultan.png", initial: "F" },
         { name: "Omkar Poojari", role: "Production Manager", image: "/media/team_pics/dop_omkar_poojari.webp", initial: "O" },
     ];
 
