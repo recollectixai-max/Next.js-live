@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Modern Minimalist Website",
+  title: "Recollectix",
   description: "A beautiful minimalist website built with Next.js",
 };
 
