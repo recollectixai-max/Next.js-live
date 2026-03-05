@@ -44,7 +44,7 @@ export default function About() {
     // Sticky Scroll Content (Static Data for later sections, unchanged)
     const team = [
         { name: "Faheem Sheikh", role: "Founder & CEO", image: "/media/team_pics/ceo_faheem_sheikh.webp", initial: "F" },
-        { name: "Zainul Shah", role: "Partner", image: "/media/team_pics/partner_zainul_shah.webp", initial: "Z" },
+        { name: "Zainul Shah", role: "COO", image: "/media/team_pics/partner_zainul_shah.webp", initial: "Z" },
         { name: "Aysha Shaikh", role: "Manager", image: "/media/team_pics/manager_aysha_shaikh.webp", initial: "A" },
         { name: "Abdur Raheem", role: "AI Engineer", image: "/media/team_pics/ai_engineer_farhan_sultan.png", initial: "A" },
         { name: "Omkar Poojari", role: "Production Manager", image: "/media/team_pics/dop_omkar_poojari.webp", initial: "O" },
