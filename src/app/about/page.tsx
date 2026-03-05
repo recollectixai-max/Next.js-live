@@ -46,6 +46,7 @@ export default function About() {
         { name: "Faheem Sheikh", role: "Founder & CEO", image: "/media/team_pics/ceo_faheem_sheikh.webp", initial: "F" },
         { name: "Zainul Shah", role: "COO", image: "/media/team_pics/partner_zainul_shah.webp", initial: "Z" },
         { name: "Aysha Shaikh", role: "Manager", image: "/media/team_pics/manager_aysha_shaikh.webp", initial: "A" },
+        { name: "Amaan Sayed", role: "Assistant Manager", image: "/media/team_pics/assistant_manager_amaan_sayed.png", initial: "A" },
         { name: "Abdur Raheem", role: "AI Engineer", image: "/media/team_pics/ai_engineer_farhan_sultan.png", initial: "A" },
         { name: "Omkar Poojari", role: "Production Manager", image: "/media/team_pics/dop_omkar_poojari.webp", initial: "O" },
     ];
@@ -380,7 +381,7 @@ export default function About() {
                     </div>
 
                     {/* Other Team Members - 2x2 Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                         {team.slice(1).map((member, index) => (
                             <div key={index} className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-[450px]">
                                 <Image
