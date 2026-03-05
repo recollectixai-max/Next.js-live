@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Recollectix",
   description: "A beautiful minimalist website built with Next.js",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 import SmoothScroll from "@/components/ui/SmoothScroll";
