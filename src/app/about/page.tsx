@@ -88,11 +88,11 @@ export default function About() {
                                 x: logoX,
                                 y: logoY,
                                 zIndex: 100000, // Ensuring it stays above Navbar
-                                position: 'relative'
+                                position: "relative",
                             }}
-                            className="absolute z-[100000] flex items-center justify-center origin-center"
+                            className="absolute z-[100000] flex items-center justify-center origin-center gap-4 md:gap-6"
                         >
-                            <div className="relative w-[300px] md:w-[600px] h-[100px] md:h-[200px]">
+                            <div className="relative w-[200px] md:w-[260px] h-[70px] md:h-[100px]">
                                 <Image
                                     src="/media/logo.png"
                                     alt="Recollectix Media"
@@ -100,6 +100,11 @@ export default function About() {
                                     className="object-contain drop-shadow-2xl"
                                     priority
                                 />
+                            </div>
+                            <div className="hidden sm:block">
+                                <span className="text-base md:text-2xl font-semibold tracking-[0.25em] md:tracking-[0.35em] text-primary whitespace-nowrap">
+                                    RECOLLECTIX PVT LTD
+                                </span>
                             </div>
                         </motion.div>
 
