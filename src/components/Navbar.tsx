@@ -47,14 +47,14 @@ export function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     <div className="flex-shrink-0 flex items-center">
-                        <Link href="/" className="flex items-center">
+                        <Link href="/" className="flex items-center w-[170px] sm:w-[220px] md:w-[280px] lg:w-[320px]">
                             <Image
                                 src="/media/recollectix_media_logo_trimmed.png"
                                 alt="Recollectix Logo"
-                                width={440}
-                                height={120}
+                                width={960}
+                                height={240}
                                 className={cn(
-                                    "h-12 sm:h-14 md:h-16 w-auto object-contain transition-opacity duration-500",
+                                    "w-full h-auto object-contain transition-opacity duration-500",
                                     isAboutHero ? "opacity-0" : "opacity-100"
                                 )}
                                 priority

@@ -8,13 +8,13 @@ export function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-2">
-                        <Link href="/" className="inline-block">
+                        <Link href="/" className="inline-block w-[220px] sm:w-[260px] md:w-[300px]">
                             <Image
                                 src="/media/recollectix_media_logo_trimmed.png"
                                 alt="Recollectix Media"
-                                width={180}
-                                height={60}
-                                className="h-12 w-auto object-contain"
+                                width={960}
+                                height={240}
+                                className="w-full h-auto object-contain"
                             />
                         </Link>
                         <p className="mt-4 text-gray-600 max-w-sm">
