@@ -47,26 +47,18 @@ export function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     <div className="flex-shrink-0 flex items-center">
-                        <Link href="/" className="flex items-center gap-2 md:gap-3">
+                        <Link href="/" className="flex items-center">
                             <Image
-                                src="/media/logo.png"
+                                src="/media/full_recollectix_logo.png"
                                 alt="Recollectix Logo"
-                                width={300}
-                                height={300}
+                                width={440}
+                                height={120}
                                 className={cn(
-                                    "h-20 w-auto object-contain transition-opacity duration-500",
+                                    "h-12 sm:h-14 md:h-16 w-auto object-contain transition-opacity duration-500",
                                     isAboutHero ? "opacity-0" : "opacity-100"
                                 )}
                                 priority
                             />
-                            <span
-                                className={cn(
-                                    "hidden sm:inline text-xs md:text-sm lg:text-base font-semibold tracking-[0.25em] md:tracking-[0.35em] text-primary uppercase whitespace-nowrap transition-opacity duration-500",
-                                    isAboutHero ? "opacity-0" : "opacity-100"
-                                )}
-                            >
-                                RECOLLECTIX PVT LTD
-                            </span>
                         </Link>
                     </div>
 
