@@ -94,7 +94,7 @@ export default function About() {
                         >
                             <div className="relative w-[320px] md:w-[520px] h-[96px] md:h-[150px]">
                                 <Image
-                                    src="/media/full_recollectix_logo.png"
+                                    src="/media/recollectix_media_logo_trimmed.png"
                                     alt="Recollectix Media"
                                     fill
                                     className="object-contain drop-shadow-2xl"

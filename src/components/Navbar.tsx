@@ -49,7 +49,7 @@ export function Navbar() {
                     <div className="flex-shrink-0 flex items-center">
                         <Link href="/" className="flex items-center">
                             <Image
-                                src="/media/full_recollectix_logo.png"
+                                src="/media/recollectix_media_logo_trimmed.png"
                                 alt="Recollectix Logo"
                                 width={440}
                                 height={120}

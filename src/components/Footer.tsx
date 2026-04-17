@@ -10,7 +10,7 @@ export function Footer() {
                     <div className="col-span-1 md:col-span-2">
                         <Link href="/" className="inline-block">
                             <Image
-                                src="/media/full_recollectix_logo.png"
+                                src="/media/recollectix_media_logo_trimmed.png"
                                 alt="Recollectix Media"
                                 width={180}
                                 height={60}
