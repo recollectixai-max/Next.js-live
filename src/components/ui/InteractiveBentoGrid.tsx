@@ -1,14 +1,13 @@
 "use client";
 
-import { SwapyLayout, SwapySlot, SwapyItem } from "@/components/ui/swapy";
 import { Users, Star, MousePointerClick, Code, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-// Service Card Components with Swapy-like Design
+// Service Card Components
 
 export function InfluencerCard() {
     return (
-        <div className="bg-emerald-600 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group select-none cursor-grab active:cursor-grabbing">
+        <div className="bg-emerald-600 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group">
             <div className="flex justify-between items-start relative z-10">
                 <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
                     <Users className="w-8 h-8 text-white" />
@@ -53,7 +52,7 @@ export function InfluencerCard() {
 
 export function TalentCard() {
     return (
-        <div className="bg-purple-400 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group select-none cursor-grab active:cursor-grabbing">
+        <div className="bg-purple-400 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group">
             <div className="flex justify-between items-start relative z-10">
                 <div className="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
                     <Star className="w-8 h-8 text-white" />
@@ -92,7 +91,7 @@ export function TalentCard() {
 
 export function SmmCard() {
     return (
-        <div className="bg-yellow-200 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group select-none cursor-grab active:cursor-grabbing">
+        <div className="bg-yellow-200 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group">
             <div className="flex justify-between items-start relative z-10">
                 <div className="bg-black/5 p-3 rounded-xl backdrop-blur-sm">
                     <MousePointerClick className="w-8 h-8 text-black" />
@@ -135,7 +134,7 @@ export function SmmCard() {
 
 export function WebDevCard() {
     return (
-        <div className="bg-gray-800 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group select-none cursor-grab active:cursor-grabbing">
+        <div className="bg-gray-800 rounded-xl h-full p-6 flex flex-col justify-between shadow-md relative overflow-hidden group">
             <div className="flex justify-between items-start relative z-10">
                 <div className="bg-white/10 p-3 rounded-xl backdrop-blur-sm">
                     <Code className="w-8 h-8 text-white" />
@@ -219,24 +218,16 @@ const initialItems: Item[] = [
 
 export default function InteractiveBentoGrid() {
     return (
-        <SwapyLayout
-            id="swapy-services"
-            className="w-full"
-            config={{
-                swapMode: "hover",
-            }}
-        >
+        <div className="w-full">
             <div className="grid w-full grid-cols-12 gap-4 py-4 auto-rows-[300px]">
                 {initialItems.map((item) => (
                     <div key={item.id} className={`${item.className} h-full`}>
-                        <SwapySlot id={item.id} className="w-full h-full">
-                            <SwapyItem id={item.id} className="w-full h-full">
-                                {item.widgets}
-                            </SwapyItem>
-                        </SwapySlot>
+                        <div className="w-full h-full">
+                            {item.widgets}
+                        </div>
                     </div>
                 ))}
             </div>
-        </SwapyLayout>
+        </div>
     );
 }
