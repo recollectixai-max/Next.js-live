@@ -20,16 +20,14 @@ export default function Home() {
   ];
 
   const leftVideos = [
-    "/media/influencer_clip_2.mp4",
-    "/media/influencer_clip_3.mp4",
-    "/media/influencer_clip_7.mp4",
+    "/media/showcase_videos/anichee.mp4",
+    "/media/showcase_videos/harish-lunch-home.mp4",
   ];
 
   const rightVideos = [
-    "/media/influencer_clip_4.mp4",
-    "/media/influencer_clip_5.mp4",
-    "/media/influencer_clip_6.mp4",
-    "/media/influencer_clip_8.mp4",
+    "/media/showcase_videos/chejara.mp4",
+    "/media/showcase_videos/house-of-pasta.mp4",
+    "/media/showcase_videos/shama-perfumes.mp4",
   ];
 
   return (
@@ -142,7 +140,7 @@ export default function Home() {
         <StickyGallery
           leftItems={leftVideos}
           rightItems={rightVideos}
-          centerVideoUrl="/media/influencer_clip_9.mp4"
+          centerVideoUrl="/media/showcase_videos/cremure.mp4"
         />
       </section>
 

@@ -1,7 +1,6 @@
 "use client";
-import { cn } from "@/lib/utils";
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll } from "framer-motion";
 
 export const StickyGallery = ({
     leftItems,
@@ -22,7 +21,7 @@ export const StickyGallery = ({
     // keeping it simple for now as requested.
 
     return (
-        <div ref={containerRef} className="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-20 min-h-[150vh]">
+        <div ref={containerRef} className="relative w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-20 min-h-[120vh] lg:min-h-[140vh]">
 
             {/* Left Column - Scrolls Normal */}
             <div className="flex flex-col gap-6 w-full">
@@ -30,11 +29,12 @@ export const StickyGallery = ({
                     <div key={`left-${i}`} className="w-full aspect-[9/16] rounded-xl overflow-hidden shadow-lg bg-gray-100 relative group">
                         <video
                             src={src}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                             muted
                             loop
                             autoPlay
                             playsInline
+                            preload="metadata"
                         />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
                     </div>
@@ -46,11 +46,12 @@ export const StickyGallery = ({
                 <div className="sticky top-24 w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl border-4 border-white z-10">
                     <video
                         src={centerVideoUrl}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-center"
                         muted
                         loop
                         autoPlay
                         playsInline
+                        preload="metadata"
                     />
                     <div className="absolute inset-x-0 bottom-0 px-6 pt-12 pb-24 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
                         <h3 className="text-white font-bold text-2xl uppercase tracking-wider mb-1">Recollectix</h3>
@@ -65,11 +66,12 @@ export const StickyGallery = ({
                     <div key={`right-${i}`} className="w-full aspect-[9/16] rounded-xl overflow-hidden shadow-lg bg-gray-100 relative group">
                         <video
                             src={src}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                             muted
                             loop
                             autoPlay
                             playsInline
+                            preload="metadata"
                         />
                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
                     </div>
