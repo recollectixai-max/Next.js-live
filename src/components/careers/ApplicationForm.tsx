@@ -12,6 +12,9 @@ type ApplicationFormProps = {
 export function ApplicationForm({ roles, selectedRole, onRoleChange }: ApplicationFormProps) {
     const formId = useId();
     const [submitted, setSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [statusMessage, setStatusMessage] = useState("");
+    const [statusType, setStatusType] = useState<"success" | "error" | "">("");
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -42,7 +45,48 @@ export function ApplicationForm({ roles, selectedRole, onRoleChange }: Applicati
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setSubmitted(true);
+        const formElement = event.currentTarget;
+        const payload = new FormData(formElement);
+
+        setIsSubmitting(true);
+        setSubmitted(false);
+        setStatusMessage("");
+        setStatusType("");
+
+        void fetch("/api/careers/apply", {
+            method: "POST",
+            body: payload,
+        })
+            .then(async (response) => {
+                const result = (await response.json()) as { message?: string };
+
+                if (!response.ok) {
+                    throw new Error(result.message || "Something went wrong while submitting your application.");
+                }
+
+                setSubmitted(true);
+                setStatusType("success");
+                setStatusMessage(result.message || "Application submitted successfully.");
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    resume: "",
+                });
+                onRoleChange(roles[0]?.title ?? "");
+                formElement.reset();
+            })
+            .catch((error: unknown) => {
+                const message = error instanceof Error
+                    ? error.message
+                    : "Something went wrong while submitting your application.";
+
+                setStatusType("error");
+                setStatusMessage(message);
+            })
+            .finally(() => {
+                setIsSubmitting(false);
+            });
     };
 
     return (
@@ -160,13 +204,18 @@ export function ApplicationForm({ roles, selectedRole, onRoleChange }: Applicati
                 <div className="md:col-span-2 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <button
                         type="submit"
-                        className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-primary/90"
+                        disabled={isSubmitting}
+                        className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5 hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
                     >
-                        Apply Now
+                        {isSubmitting ? "Submitting..." : "Apply Now"}
                     </button>
                     {submitted ? (
-                        <p className="text-sm text-stone-600">
-                            Application captured. Connect this form to your backend or email workflow to receive submissions.
+                        <p className="text-sm text-emerald-700">
+                            {statusMessage}
+                        </p>
+                    ) : statusMessage ? (
+                        <p className={`text-sm ${statusType === "error" ? "text-red-600" : "text-stone-600"}`}>
+                            {statusMessage}
                         </p>
                     ) : null}
                 </div>
