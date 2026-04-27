@@ -96,8 +96,8 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-2">Phone</h3>
-                                        <a href="tel:+918850942466" className="text-gray-600 hover:text-primary transition-colors block">
-                                            +91 88509 42466
+                                        <a href="tel:+919326005607" className="text-gray-600 hover:text-primary transition-colors block">
+                                            +91 93260 05607
                                         </a>
                                     </div>
                                 </div>
@@ -108,8 +108,8 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 mb-2">Email</h3>
-                                        <a href="mailto:faheem@recollectix.com" className="text-gray-600 hover:text-primary transition-colors block">
-                                            faheem@recollectix.com
+                                        <a href="mailto:business@recollectix.com" className="text-gray-600 hover:text-primary transition-colors block">
+                                            business@recollectix.com
                                         </a>
                                     </div>
                                 </div>

@@ -64,11 +64,11 @@ export function Footer() {
                             </li>
                             <li>
                                 <strong className="block text-gray-900 mb-1">Phone:</strong>
-                                <a href="tel:+918850942466" className="hover:text-primary transition-colors">+91 88509 42466</a>
+                                <a href="tel:+919326005607" className="hover:text-primary transition-colors">+91 93260 05607</a>
                             </li>
                             <li>
                                 <strong className="block text-gray-900 mb-1">Email:</strong>
-                                <a href="mailto:faheem@recollectix.com" className="hover:text-primary transition-colors">faheem@recollectix.com</a>
+                                <a href="mailto:business@recollectix.com" className="hover:text-primary transition-colors">business@recollectix.com</a>
                             </li>
                         </ul>
                     </div>
