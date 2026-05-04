@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 import { RotatingText } from "@/components/ui/RotatingText";
 
@@ -77,7 +76,7 @@ export function HeroSection() {
                             playsInline
                             className="w-full h-full object-cover"
                         >
-                            <source src="/media/hero_bg.mp4" type="video/mp4" />
+                            <source src="/media/website-display.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
 
