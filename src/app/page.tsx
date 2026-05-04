@@ -1,10 +1,9 @@
 import { HeroSection } from "@/components/ui/HeroSection";
-import { StickyGallery } from "@/components/ui/StickyGallery";
 import InteractiveBentoGrid from "@/components/ui/InteractiveBentoGrid";
 import { InfiniteMarquee } from "@/components/ui/InfiniteMarquee";
 import { CountUp } from "@/components/ui/CountUp";
 import Link from "next/link";
-import { ArrowRight, Star, Users, Briefcase, Code, MousePointerClick } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   const clients = [
@@ -17,17 +16,6 @@ export default function Home() {
     { name: "Brand 7", logo: "/media/brand_7.png" },
     { name: "Brand 8", logo: "/media/brand_8.png" },
     { name: "Brand 9", logo: "/media/brand_9.png" },
-  ];
-
-  const leftVideos = [
-    "/media/showcase_videos/anichee.mp4",
-    "/media/showcase_videos/harish-lunch-home.mp4",
-  ];
-
-  const rightVideos = [
-    "/media/showcase_videos/chejara.mp4",
-    "/media/showcase_videos/house-of-pasta.mp4",
-    "/media/showcase_videos/shama-perfumes.mp4",
   ];
 
   return (
@@ -101,7 +89,7 @@ export default function Home() {
           </div>
           <div className="relative z-10 max-w-4xl mx-auto mt-12 pt-12 border-t border-white/20">
             <h2 className="text-xl md:text-2xl font-bold leading-tight italic">
-              "Successfully managed a network of influencers, delivering custom-tailored campaigns that consistently exceed brand goals."
+              &quot;Successfully managed a network of influencers, delivering custom-tailored campaigns that consistently exceed brand goals.&quot;
             </h2>
           </div>
           {/* Decorative circles */}
@@ -116,7 +104,7 @@ export default function Home() {
           <div>
             <span className="text-primary font-semibold tracking-wider text-sm uppercase mb-2 block">Our Approach</span>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
-              Amplifying your brand's reach
+              Amplifying your brand&apos;s reach
             </h2>
           </div>
           <div>
@@ -137,11 +125,19 @@ export default function Home() {
             See how we bring brands to life with our influencer network.
           </p>
         </div>
-        <StickyGallery
-          leftItems={leftVideos}
-          rightItems={rightVideos}
-          centerVideoUrl="/media/showcase_videos/cremure.mp4"
-        />
+        <div className="mx-auto max-w-6xl px-4 md:px-8">
+          <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl">
+            <video
+              src="/media/website-display.mp4"
+              className="block w-full aspect-video object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Motto / Call to Action */}
