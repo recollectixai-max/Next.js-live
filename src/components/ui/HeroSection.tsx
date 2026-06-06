@@ -22,7 +22,7 @@ export function HeroSection() {
                             <h1
                                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.9] uppercase"
                                 style={{
-                                    backgroundImage: 'url(https://recollectix.com/wp-content/uploads/2025/01/ezgif.com-gif-maker.gif)',
+                                    backgroundImage: 'url(/media/hero_text_bg.gif)',
                                     backgroundClip: 'text',
                                     WebkitBackgroundClip: 'text',
                                     WebkitTextFillColor: 'transparent',

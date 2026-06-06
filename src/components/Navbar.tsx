@@ -13,6 +13,7 @@ const navItems = [
     { name: "Careers", href: "/careers" },
     { name: "Services", href: "/services" },
     { name: "Our Work", href: "/our-work" },
+    // { name: "New Work", href: "/new-work" },
 ];
 
 export function Navbar() {
