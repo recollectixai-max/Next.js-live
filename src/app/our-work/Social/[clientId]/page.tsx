@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { use, useState } from "react";
+import { use, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { SocialData } from "@/data/social-data";
@@ -343,6 +343,13 @@ export default function SocialCaseStudy({
           display: block;
           aspect-ratio: 9 / 16;
         }
+        .reel-card iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+          display: block;
+          aspect-ratio: 9 / 16;
+        }
         .reel-meta {
           position: absolute;
           left: 18px;
@@ -364,6 +371,45 @@ export default function SocialCaseStudy({
         .reel-meta small {
           font-size: 12px;
           color: rgba(255, 255, 255, 0.75);
+        }
+        .reel-badge {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: rgba(225, 48, 108, 0.9);
+          backdrop-filter: blur(10px);
+          z-index: 10;
+          font-size: 24px;
+        }
+        .reel-badge.instagram::after {
+          content: "📷";
+        }
+        .reel-link-overlay {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          border-radius: 26px;
+        }
+        .reel-card:hover .reel-link-overlay {
+          opacity: 1;
+        }
+        .reel-link-overlay::after {
+          content: "Open on Instagram →";
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: center;
         }
         .editorial-grid {
           display: grid;
@@ -456,6 +502,13 @@ export default function SocialCaseStudy({
             grid-template-columns: 1fr;
             gap: 0px;
             margin-bottom: 0px;
+          }
+          .editorial-item img,
+          .editorial-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
           }
           .editorial-item:nth-child(2), .editorial-item:nth-child(4) {
             transform: translateY(0px);
@@ -560,22 +613,40 @@ export default function SocialCaseStudy({
             >
               <div className="reel-grid">
                 {reels.map((r, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    className={`reel-card ${i === activeReel ? "active" : ""}`}
-                    onClick={() => setActiveReel(i)}
-                  >
-                    {r.videoSrc ? (
-                      <video src={r.videoSrc} autoPlay muted controls loop playsInline poster={r.thumb} />
-                    ) : (
-                      <Image src={r.thumb} alt={r.caption ?? `Reel ${i + 1}`} fill style={{ objectFit: "cover" }} />
-                    )}
-                    {/* <div className="reel-meta">
-                      <span>{r.caption}</span>
-                      <small>Tap to view details</small>
-                    </div> */}
-                  </button>
+                  r.link && !r.videoSrc ? (
+                    <div
+                      key={i}
+                      className="reel-card"
+                    >
+                      <iframe
+                        src={`${r.link}embed/`}
+                        allowFullScreen={true}
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        title={r.caption ?? `Reel ${i + 1}`}
+                      />
+                      <div className="reel-badge instagram" />
+                      <div className="reel-meta">
+                        <span>{r.caption}</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <button
+                      key={i}
+                      type="button"
+                      className={`reel-card ${i === activeReel ? "active" : ""}`}
+                      onClick={() => setActiveReel(i)}
+                    >
+                      {r.videoSrc ? (
+                        <video src={r.videoSrc} autoPlay muted controls loop playsInline poster={r.thumb} />
+                      ) : (
+                        <Image src={r.thumb} alt={r.caption ?? `Reel ${i + 1}`} fill style={{ objectFit: "cover" }} />
+                      )}
+                      {/* <div className="reel-meta">
+                        <span>{r.caption}</span>
+                        <small>Tap to view details</small>
+                      </div> */}
+                    </button>
+                  )
                 ))}
               </div>
             </motion.section>

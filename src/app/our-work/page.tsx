@@ -75,12 +75,28 @@ export default function OurWork() {
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
+            id: "dales-eden-im",
+            name: "Dales Eden",
+            link: "/our-work/Influencer/dales-eden-im",
+            image: "/media/our_work_pics/de-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "evorea-im",
+            name: "Evorea",
+            link: "/our-work/Influencer/evorea-im",
+            image: "/media/our_work_pics/ev-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
             id: "dales-eden-sm",
             name: "Dales Eden",
             link: "/our-work/Social/dales-eden",
             image: "/media/our_work_pics/dale’s eden.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "evorea-sm",
@@ -88,7 +104,7 @@ export default function OurWork() {
             link: "/our-work/Social/evorea",
             image: "/media/our_work_pics/evorea.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "house-of-pasta-sm",
@@ -108,36 +124,183 @@ export default function OurWork() {
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: true }
         },
         {
+            id: "persiana-im",
+            name: "Persiana",
+            link: "/our-work/Influencer/persiana-im",
+            image: "/media/our_work_pics/persiana-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "bakewills-im",
+            name: "Bakewills",
+            link: "/our-work/Influencer/bakewills-im",
+            image: "/media/our_work_pics/bakewills-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "rare-earth-im",
+            name: "Rare Earth",
+            link: "/our-work/Influencer/rare-earth-im",
+            image: "/media/our_work_pics/rare-earth-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "delhi-zaika-im",
+            name: "Delhi Zaika",
+            link: "/our-work/Influencer/delhi-zaika-im",
+            image: "/media/our_work_pics/delhi-zaika-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "lakme-im",
+            name: "Lakme",
+            link: "/our-work/Influencer/lakme-im",
+            image: "/media/our_work_pics/lakme-im.png",
+            brandCategory: "Fashion",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "pilgrim-im",
+            name: "Pilgrim",
+            link: "/our-work/Influencer/pilgrim-im",
+            image: "/media/our_work_pics/pilgrim-im.png",
+            brandCategory: "Fashion",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "shama-perfumes-im",
+            name: "Shama Perfumes",
+            link: "/our-work/Influencer/shama-perfumes-im",
+            image: "/media/our_work_pics/shama-perfumes-im.png",
+            brandCategory: "Lifestyle",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "beach-house-im",
+            name: "Beach House",
+            link: "/our-work/Influencer/beach-house-im",
+            image: "/media/our_work_pics/beach-house-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "creamers-im",
+            name: "Creamers",
+            link: "/our-work/Influencer/creamers-im",
+            image: "/media/our_work_pics/creamers-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "shawarma-cafe-im",
+            name: "Shawarma Cafe",
+            link: "/our-work/Influencer/shawarma-cafe-im",
+            image: "/media/our_work_pics/shawarma-cafe-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "taipei-im",
+            name: "Taipei",
+            link: "/our-work/Influencer/taipei-im",
+            image: "/media/our_work_pics/taipei-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "ajwa-im",
+            name: "Ajwa",
+            link: "/our-work/Influencer/ajwa-im",
+            image: "/media/our_work_pics/ajwa-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "urban-italiano-im",
+            name: "Urban Italiano",
+            link: "/our-work/Influencer/urban-italiano-im",
+            image: "/media/our_work_pics/urban-italiano-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "harish-lunch-home-im",
+            name: "Harish Lunch Home",
+            link: "/our-work/Influencer/harish-lunch-home-im",
+            image: "/media/our_work_pics/hlh-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "istanbul-darbar-im",
+            name: "Istanbul Darbar",
+            link: "/our-work/Influencer/istanbul-darbar-im",
+            image: "/media/our_work_pics/istanbul-darbar-im.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "francos-pizzeria-im",
+            name: "Franco's Pizzeria",
+            link: "/our-work/Influencer/francos-pizzeria-im",
+            image: "/media/our_work_pics/francos-pizzeria-im.jpeg",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "mnm-im",
+            name: "MnM",
+            link: "/our-work/Influencer/mnm-im",
+            image: "/media/our_work_pics/mnm-im.jpeg",
+            brandCategory: "Fashion",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "k-square-im",
+            name: "K Square",
+            link: "/our-work/Influencer/k-square-im",
+            image: "/media/our_work_pics/k-square-im.jpeg",
+            brandCategory: "Personal Branding",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
+        {
             id: "persiana-sm",
             name: "Persiana",
             link: "/our-work/Social/persiana",
             image: "/media/our_work_pics/Persiana.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "bakewills-sm",
             name: "Bakewills",
             link: "/our-work/Social/bakewills",
             image: "/media/our_work_pics/Bakewills.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "rare-earth-sm",
             name: "Rare Earth",
             link: "/our-work/Social/rare-earth",
             image: "/media/our_work_pics/Rare Earth.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "delhi-zaika-sm",
             name: "Delhi Zaika",
             link: "/our-work/Social/delhi-zaika",
             image: "/media/our_work_pics/Delhi Zaika.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "d2d-sm",
@@ -155,13 +318,14 @@ export default function OurWork() {
             brandCategory: "Fashion",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "mnm-sm",
             name: "MnM",
             link: "/our-work/Social/mnm",
             image: "/media/our_work_pics/MnM.png",
             brandCategory: "Fashion",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "wens-sm",
@@ -177,7 +341,7 @@ export default function OurWork() {
             link: "/our-work/Social/global-gypsum",
             image: "/media/our_work_pics/Global Gypsum.png",
             brandCategory: "Architecture",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "era-sm",
@@ -201,7 +365,7 @@ export default function OurWork() {
             link: "/our-work/Social/aniiche",
             image: "/media/our_work_pics/Anichee.png",
             brandCategory: "Personal Branding",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "cruise-career-sm",
@@ -219,46 +383,52 @@ export default function OurWork() {
             brandCategory: "Healthcare",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "beach-house-sm",
             name: "Beach House",
             link: "https://www.instagram.com/thebeachhousegorai",
             image: "/media/our_work_pics/the beach house.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "creamers-sm",
             name: "Creamers",
             link: "https://www.instagram.com/creamerscakesbakes",
             image: "/media/our_work_pics/creamer’s.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+       
         {
             id: "shawarma-cafe-sm",
             name: "Shawarma Cafe",
             link: "https://www.instagram.com/shawarmacafeindia",
             image: "/media/our_work_pics/Shawarma Cafe.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "taipei-sm",
             name: "Taipei",
             link: "https://www.instagram.com/taipei_authentic_asian_cuisine",
             image: "/media/our_work_pics/Taipei.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "ajwa-sm",
             name: "Ajwa",
             link: "https://www.instagram.com/ajwahouseofdryfruits_official",
             image: "/media/our_work_pics/Ajwa.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         
         {
             id: "urban-italiano-sm",
@@ -266,32 +436,36 @@ export default function OurWork() {
             link: "https://www.instagram.com/urban_italiano_/",
             image: "/media/our_work_pics/Urban Italiano.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "harish-lunch-home-sm",
             name: "Harish Lunch Home",
             link: "https://www.instagram.com/harish_lunch_home",
             image: "/media/our_work_pics/Harish Lunch Home.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "istanbul-darbar-sm",
             name: "Istanbul Darbar",
             link: "https://www.instagram.com/istanbuldarbar",
             image: "/media/our_work_pics/Istanbul Darbar.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "francos-pizzeria-sm",
             name: "Franco's Pizzeria",
             link: "https://www.instagram.com/francospizzeriaindia",
             image: "/media/our_work_pics/Franco's Pizzeria.png",
             brandCategory: "Food & Beverages",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         
         {
             id: "shama-perfumes-sm",
@@ -299,7 +473,7 @@ export default function OurWork() {
             link: "https://www.instagram.com/shamabrothersperfumers",
             image: "/media/our_work_pics/Shama Perfumes.png",
             brandCategory: "Lifestyle",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "al-hassan-sm",
@@ -388,13 +562,14 @@ export default function OurWork() {
         },
         
         
+        
         {
             id: "k-square-sm",
             name: "K Square",
             link: "https://www.instagram.com/k.squarevillas",
             image: "/media/our_work_pics/K Square.png",
             brandCategory: "Personal Branding",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         
         {
@@ -513,13 +688,14 @@ export default function OurWork() {
             brandCategory: "Real Estate",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "lakme-sm",
             name: "Lakme",
             link: "https://www.instagram.com/lakmeindia/",
             image: "/media/our_work_pics/Lakme.png",
             brandCategory: "Fashion",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "madina-school-sm",
@@ -537,13 +713,14 @@ export default function OurWork() {
             brandCategory: "Lifestyle",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        
         {
             id: "pilgrim-sm",
             name: "Pilgrim",
             link: "https://www.instagram.com/discover.pilgrim/",
             image: "/media/our_work_pics/Pilgrim.png",
             brandCategory: "Fashion",
-            services: { socialMedia: true, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
             id: "top10-sm",

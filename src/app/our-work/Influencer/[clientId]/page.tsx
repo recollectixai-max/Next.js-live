@@ -6,6 +6,7 @@ import { use, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { CountUp } from "@/components/ui/CountUp";
+import { influencerClients } from "@/data/influencer-data";
 // import { InfluencerData } from "@/data/Influencer-data";
 // import { getInfluencerClient } from "@/data/Influencer-data";
 
@@ -16,315 +17,13 @@ import { CountUp } from "@/components/ui/CountUp";
 //    takeaway · embedUrl · gallery
 // ─────────────────────────────────────────────────────────────────────────────
 
-export const influencerData: Record<string, influencerClient> = {
-  "bosch": {
-    name: "Bosch",
-    slug: "bosch",
-    headline: "Taking Bosch Home Appliances from Product Awareness to Lifestyle Influence.",
-    heroImage: "/media/case-banner.webp",
-    services: [
-      "Content Strategy",
-      "Reels Production",
-      "Influencer Management",
-      "Community Management",
-      "Analytics & Reporting",
-    ],
-    industry: "Home Appliances Manufacturing",
-    year: "2024",
-    InstagramLink: "https://instagram.com/boschhomein",
 
-    intro: [
-      "How influencer-led storytelling helped Bosch connect with modern households, showcase real-life product experiences and strengthen its position as a premium smart home brand",
-      "Consumers don't buy features—they buy outcomes. Our campaign focused on bringing Bosch's innovation to life through creators who could authentically demonstrate convenience, efficiency, and smart living.",
-      
-    ],
-
-    resultsHeading: "Campaign Impact & Key Outcomes",
-    performanceStats: [
-      { label: "Creators managed", value: 5, suffix: "+", detail: "Creators onboarded every month" },
-      { label: "Total views", value: 3.5, suffix: "M+", detail: "Audience reached" },
-      { label: "Total likes", value: 658, suffix: "K", detail: "Total campaign impressions" },
-      { label: "Total shares", value: 43, suffix: "K", detail: "Over sustained campaign activity" },
-      { label: "Total comments", value: 734, suffix: "+", detail: "Estimated growth contribution" },
-    ],
-    results: [
-      "Increased brand and product awareness",
-      "Wider audience reach through creator collaborations",
-      "Strong engagement around the oven launch",
-      "Enhanced campaign visibility across social media",
-    ],
-
-    takeaway: {
-      label: "The Key Takeaway",
-      body: "Choosing the right creators for the right brand isn't luck. It's craft. The right faces carrying the right words, backed by a creative team that gives every campaign its idea and its soul. That's when ordinary content becomes inevitable culture.",
-    },
-
-    // YouTube embed src (iframe src, not watch URL) — set null to hide
-
-    // editorialGallery: [
-    //   "/media/brand-gallery/DE-1.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-3.jpg",
-    //   "/media/brand-gallery/DE-4.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-1.jpg",
-    // ],
-    reels: [
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/bo-im-1.mp4", link: "https://www.instagram.com", caption: "@thesupremelove_" },
-      { thumb: "/media/services_public_relation.png", videoSrc: "/media/brand-gallery/videos/bo-im-2.mp4", link: "https://www.instagram.com", caption: "@lovehustlefreedom" },
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/bo-im-3.mp4", link: "https://www.instagram.com", caption: "@kimayavartak" },
-    ],
-  },
-  "cremure-im": {
-    name: "Cremure",
-    slug: "cremure-im",
-    headline: "Building Consistent Brand Visibility for Cremure Through Always-On Influencer Marketing.",
-    heroImage: "/media/case-banner.webp",
-    services: [
-      "Content Strategy",
-      "Reels Production",
-      "Influencer Management",
-      "Community Management",
-      "Analytics & Reporting",
-    ],
-    industry: "Food & Beverages",
-    year: "2024",
-    InstagramLink: "https://instagram.com/cremure_",
-
-    intro: [
-      "Recollectix partnered with Cremure to drive consistent brand visibility through influencer marketing. We onboarded and managed 6–7 influencers every month, ensuring regular content and audience engagement.",
-      "This ongoing strategy helped Cremure reach a wider audience, strengthen brand awareness and support sales growth through authentic creator-driven promotions.",
-      
-    ],
-
-    resultsHeading: "Campaign Impact & Key Outcomes",
-    performanceStats: [
-      { label: "Creators managed", value: 50, suffix: "+", detail: "Creators onboarded every month" },
-      { label: "Total views", value: 18.2, suffix: "M+", detail: "Audience reach" },
-      { label: "Total likes", value: 978, suffix: "K", detail: "Total campaign impressions" },
-      { label: "Total shares", value: 61, suffix: "K", detail: "Over sustained campaign activity" },
-      { label: "Total comments", value: 734, suffix: "+", detail: "Estimated growth contribution" },
-    ],    
-    results: [
-      "6–7 influencer collaborations every month",
-      "Consistent social media visibility",
-      "Expanded audience reach across target demographics",
-      "Contributed to stronger sales growth through creator-led promotions",
-    ],
-
-    takeaway: {
-      label: "The Key Takeaway",
-      body: "Choosing the right creators for the right brand isn't luck. It's craft. The right faces carrying the right words, backed by a creative team that gives every campaign its idea and its soul. That's when ordinary content becomes inevitable culture.",
-    },
-
-    // YouTube embed src (iframe src, not watch URL) — set null to hide
-
-    // editorialGallery: [
-    //   "/media/brand-gallery/DE-1.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-3.jpg",
-    //   "/media/brand-gallery/DE-4.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-1.jpg",
-    // ],
-    reels: [
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/c-im-1.mp4", link: "https://www.instagram.com", caption: "@nusta_foody" },
-      { thumb: "/media/services_public_relation.png", videoSrc: "/media/brand-gallery/videos/c-im-2.mp4", link: "https://www.instagram.com", caption: "@eat.or.regret" },
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/c-im-3.mp4", link: "https://www.instagram.com", caption: "@mumbai_heavens" },
-    ],
-  },
-  "veena-developer": {
-    name: "veena developers",
-    slug: "veena-developer",
-    headline: "Driving Brand Visibility for Veena Developers Through Strategic Influencer Marketing",
-    heroImage: "/media/case-banner.webp",
-    services: [
-      "Content Strategy",
-      "Reels Production",
-      "Influencer Management",
-      "Community Management",
-      "Analytics & Reporting",
-    ],
-    industry: "Real Estate",
-    year: "2024",
-    InstagramLink: "https://instagram.com/veena_developers",
-
-    intro: [
-      "In October 2025, Recollectix executed a targeted influencer marketing campaign for Veena Developers to enhance brand visibility and reach potential homebuyers.",
-      "By collaborating with relevant creators, we helped the brand gain significant exposure across social media, expand its audience reach, and strengthen engagement with prospective customers, ultimately supporting its sales and marketing goals.",
-      
-    ],
-
-    resultsHeading: "Campaign Impact & Key Outcomes",
-    performanceStats: [
-      { label: "Creators managed", value: 4, suffix: "+", detail: "Creators onboarded every month" },
-      { label: "Total views", value: 4.9, suffix: "M+", detail: "Audience reach" },
-      { label: "Total likes", value: 618, suffix: "K", detail: "Total campaign impressions" },
-      { label: "Total shares", value: 11, suffix: "K", detail: "Over sustained campaign activity" },
-      { label: "Total comments", value: 234, suffix: "+", detail: "Estimated growth contribution" },
-    ],
-    results: [
-      "Increased brand awareness",
-      "Wider audience reach",
-      "Strong social media visibility",
-      "Supported lead generation and sales growth",
-    ],
-
-    takeaway: {
-      label: "The Key Takeaway",
-      body: "Choosing the right creators for the right brand isn't luck. It's craft. The right faces carrying the right words, backed by a creative team that gives every campaign its idea and its soul. That's when ordinary content becomes inevitable culture.",
-    },
-
-    // YouTube embed src (iframe src, not watch URL) — set null to hide
-
-    // editorialGallery: [
-    //   "/media/brand-gallery/DE-1.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-3.jpg",
-    //   "/media/brand-gallery/DE-4.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-1.jpg",
-    // ],
-    reels: [
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/ve-im-1.mp4", link: "https://www.instagram.com", caption: "@jannatsorathia" },
-      { thumb: "/media/services_public_relation.png", videoSrc: "/media/brand-gallery/videos/ve-im-2.mp4", link: "https://www.instagram.com", caption: "@saarthigroups" },
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/veena-v3.mp4", link: "https://www.instagram.com", caption: "@theblogginghogger" },
-    ],
-  },
-  "supreme-seasons": {
-    name: "Supreme Seasons",
-    slug: "supreme-seasons",
-    headline: "Spreading the Colors of Holi with Supreme Seasons Influencer Campaign",
-    heroImage: "/media/case-banner.webp",
-    services: [
-      "Content Strategy",
-      "Reels Production",
-      "Influencer Management",
-      "Community Management",
-      "Analytics & Reporting",
-    ],
-    industry: "Gifting",
-    year: "2024",
-    InstagramLink: "https://instagram.com/supremeseasons_official",
-
-    intro: [
-      "Recollectix executed a large-scale influencer marketing campaign for Supreme Season to promote its Holi hamper collection",
-      "By collaborating with 20+ influencers, we created strong festive buzz around the product launch, helping the brand reach a wider audience and maximize visibility during the Holi season. The campaign drove high engagement, increased brand awareness, and supported sales through authentic creator-led content.",
-      
-    ],
-
-    resultsHeading: "Campaign Impact & Key Outcomes",
-    performanceStats: [
-      { label: "Creators managed", value: 20, suffix: "+", detail: "Creators onboarded every month" },
-      { label: "Total views", value: 5.3, suffix: "M+", detail: "Audience reach" },
-      { label: "Total likes", value: 23, suffix: "K", detail: "Total campaign impressions" },
-      { label: "Total shares", value: 23, suffix: "K", detail: "Over sustained campaign activity" },
-      { label: "Total comments", value: 434, suffix: "+", detail: "Estimated growth contribution" },
-    ],
-    results: [
-      "Strong festive campaign visibility",
-      "Expanded audience reach",
-      "Increased brand awareness and engagement",
-      "Supported Holi hamper sales growth through social media exposure",
-    ],
-
-    takeaway: {
-      label: "The Key Takeaway",
-      body: "Choosing the right creators for the right brand isn't luck. It's craft. The right faces carrying the right words, backed by a creative team that gives every campaign its idea and its soul. That's when ordinary content becomes inevitable culture.",
-    },
-
-    // YouTube embed src (iframe src, not watch URL) — set null to hide
-
-    // editorialGallery: [
-    //   "/media/brand-gallery/DE-1.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-3.jpg",
-    //   "/media/brand-gallery/DE-4.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-1.jpg",
-    // ],
-    reels: [
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/ss-im-1.mp4", link: "https://www.instagram.com", caption: "@pursuit.of.happynesss" },
-      { thumb: "/media/services_public_relation.png", videoSrc: "/media/brand-gallery/videos/ss-im-2.mp4", link: "https://www.instagram.com", caption: "@_cherry29" },
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/ss-im-3.mp4", link: "https://www.instagram.com", caption: "@aanjaliiiii" },
-    ],
-  },
-  "swiss-wellness": {
-    name: "swiss wellness",
-    slug: "swiss-wellness",
-    headline: "Amplifying Swiss Wellness’s Brand Presence Through a Celebrity-Led Influencer Marketing Campaign.",
-    heroImage: "/media/case-banner.webp",
-    services: [
-      "Content Strategy",
-      "Reels Production",
-      "Influencer Management",
-      "Community Management",
-      "Analytics & Reporting",
-    ],
-    industry: "Healthcare & Wellness",
-    year: "2024",
-    InstagramLink: "https://instagram.com/swissein",
-
-    intro: [
-      "Recollectix executed a targeted influencer marketing campaign for Swiss Aus Wellness, helping amplify the brand's presence during its campaign featuring Aditya Roy Kapur.",
-      "Through strategic creator collaborations, the campaign expanded the brand's reach, increased engagement, and strengthened its connection with health-conscious consumers.",
-      
-    ],
-
-    resultsHeading: "Campaign Impact & Key Outcomes",
-    performanceStats: [
-      { label: "Creators managed", value: 3, suffix: "+", detail: "Creators onboarded every month" },
-      { label: "Total views", value: 3.1, suffix: "M+", detail: "Audience reach" },
-      { label: "Total likes", value: 12, suffix: "K", detail: "Total campaign impressions" },
-      { label: "Total shares", value: 9, suffix: "K", detail: "Over sustained campaign activity" },
-      { label: "Total comments", value: 651, suffix: "+", detail: "Estimated growth contribution" },
-    ],
-    results: [
-      "Increased brand awareness across social media",
-      "Reached a wider and highly relevant audience",
-      "Enhanced engagement through authentic creator content",
-      "Strengthened campaign visibility and recall",
-    ],
-
-    takeaway: {
-      label: "The Key Takeaway",
-      body: "Choosing the right creators for the right brand isn't luck. It's craft. The right faces carrying the right words, backed by a creative team that gives every campaign its idea and its soul. That's when ordinary content becomes inevitable culture.",
-    },
-
-    // YouTube embed src (iframe src, not watch URL) — set null to hide
-
-    // editorialGallery: [
-    //   "/media/brand-gallery/DE-1.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-3.jpg",
-    //   "/media/brand-gallery/DE-4.jpg",
-    //   "/media/brand-gallery/DE-2.jpg",
-    //   "/media/brand-gallery/DE-1.jpg",
-    // ],
-    reels: [
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/sw-im-1.mp4", link: "https://www.instagram.com", caption: "@amrapali.patil" },
-      { thumb: "/media/services_public_relation.png", videoSrc: "/media/brand-gallery/videos/sw-im-2.mp4", link: "https://www.instagram.com", caption: "@fitculturebytanya" },
-      { thumb: "/media/services_talent_management.png", videoSrc: "/media/brand-gallery/videos/sw-im-3.mp4", link: "https://www.instagram.com", caption: "@raina.mehta35" },
-    ],
-  },
-
-
-};
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  TYPES
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface influencerClient {
-  name: string; slug: string; headline: string; heroImage: string;
-  services: string[]; industry: string; year: string; InstagramLink: string;
-  intro: string[]; 
-  resultsHeading: string; results: string[];
-  takeaway: { label: string; body: string };
-  performanceStats?: { label: string; value: number; suffix?: string; detail?: string }[];
-  reels?: { thumb: string; videoSrc?: string; link?: string; caption?: string }[];
-  // editorialGallery: string[];
-}
+
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  PAGE
@@ -335,7 +34,7 @@ export default function InfluencerCaseStudy({
   params: Promise<{ clientId: string }>;
 }) {
   const { clientId } = use(params);
-  const client = influencerData[clientId] ?? influencerData[""];
+  const client = influencerClients[clientId] ?? influencerClients[""];
   const [activeReel, setActiveReel] = useState(0);
   const reels = client.reels ?? [];
   // const editorialGallery = client.editorialGallery ?? [];
@@ -667,6 +366,45 @@ export default function InfluencerCaseStudy({
           font-size: 12px;
           color: rgba(255, 255, 255, 0.75);
         }
+        .reel-badge {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background: rgba(225, 48, 108, 0.9);
+          backdrop-filter: blur(10px);
+          z-index: 10;
+          font-size: 24px;
+        }
+        .reel-badge.instagram::after {
+          content: "📷";
+        }
+        .reel-link-overlay {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0, 0, 0, 0.2);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          border-radius: 26px;
+        }
+        .reel-card:hover .reel-link-overlay {
+          opacity: 1;
+        }
+        .reel-link-overlay::after {
+          content: "Open on Instagram →";
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: center;
+        }
         .editorial-grid {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -867,22 +605,43 @@ export default function InfluencerCaseStudy({
             >
               <div className="reel-grid">
                 {reels.map((r, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    className={`reel-card ${i === activeReel ? "active" : ""}`}
-                    onClick={() => setActiveReel(i)}
-                  >
-                    {r.videoSrc ? (
-                      <video src={r.videoSrc} autoPlay muted loop playsInline poster={r.thumb} />
-                    ) : (
+                  r.link && !r.videoSrc ? (
+                    <a
+                      key={i}
+                      href={r.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="reel-card"
+                      onClick={(e) => {
+                        if (r.link) window.open(r.link, '_blank');
+                      }}
+                    >
                       <Image src={r.thumb} alt={r.caption ?? `Reel ${i + 1}`} fill style={{ objectFit: "cover" }} />
-                    )}
-                    <div className="reel-meta">
-                      <span>{r.caption}</span>
-                      {/* <small>Tap to view details</small> */}
-                    </div>
-                  </button>
+                      <div className="reel-badge instagram" />
+                      <div className="reel-link-overlay" />
+                      <div className="reel-meta">
+                        <span>{r.caption}</span>
+                        <small>Tap to view</small>
+                      </div>
+                    </a>
+                  ) : (
+                    <button
+                      key={i}
+                      type="button"
+                      className={`reel-card ${i === activeReel ? "active" : ""}`}
+                      onClick={() => setActiveReel(i)}
+                    >
+                      {r.videoSrc ? (
+                        <video src={r.videoSrc} autoPlay muted loop playsInline poster={r.thumb} />
+                      ) : (
+                        <Image src={r.thumb} alt={r.caption ?? `Reel ${i + 1}`} fill style={{ objectFit: "cover" }} />
+                      )}
+                      <div className="reel-meta">
+                        <span>{r.caption}</span>
+                        {/* <small>Tap to view details</small> */}
+                      </div>
+                    </button>
+                  )
                 ))}
               </div>
             </motion.section>
