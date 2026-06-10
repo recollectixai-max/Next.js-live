@@ -150,7 +150,7 @@ export default function SocialMediaManagement() {
                     <div className="relative">
                         <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden relative">
                             <Image
-                                src="/media/logo.jpg"
+                                src="/media/logo.png"
                                 alt="Recollectix Culture"
                                 width={600}
                                 height={600}
