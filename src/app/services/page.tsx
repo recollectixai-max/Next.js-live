@@ -38,6 +38,13 @@ export default function Services() {
             image: "/media/services_web_development.png",
             link: "/services/web-development",
         },
+        {
+            title: "OOH Advertising",
+            description: "Bring your brand vision to life with our expert OOH advertising services. We create impactful outdoor campaigns that capture attention and drive engagement. From concept to execution, we ensure your message stands out in the bustling urban landscape.",
+            icon: <Code className="w-10 h-10 text-white" />,
+            image: "/media/ooh.png",
+            link: "/services/ooh-advertising",
+        },
     ];
 
     return (
