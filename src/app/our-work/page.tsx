@@ -600,6 +600,46 @@ export default function OurWork() {
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
+            id: "febae-web",
+            name: "Febae",
+            link: "https://febae.com/",
+            image: "/media/our_work_pics/Febae-web.png", // Web Dev image
+            brandCategory: "Jewellery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "raviva-web",
+            name: "Raviva",
+            link: "https://ravivajewellery.com/",
+            image: "/media/our_work_pics/raviva.png", // Web Dev image
+            brandCategory: "Jewellery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "zariin-web",
+            name: "Zariin",
+            link: "https://zariin.com/",
+            image: "/media/our_work_pics/zariin.png", // Web Dev image
+            brandCategory: "Jewellery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "zariva-web",
+            name: "Zariva",
+            link: "https://zarivajewels.in/",
+            image: "/media/our_work_pics/zariva.png", // Web Dev image
+            brandCategory: "Jewellery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "adeline-web",
+            name: "Adeline",
+            link: "https://adeline.in/",
+            image: "/media/our_work_pics/adeline.png", // Web Dev image
+            brandCategory: "Jewellery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
             id: "belmont-london-web",
             name: "Belmont London",
             link: "https://belmontlondon.com/",
