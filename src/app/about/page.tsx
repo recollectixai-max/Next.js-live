@@ -49,6 +49,7 @@ export default function About() {
         { name: "Amaan Sayed", role: "Assistant Manager", image: "/media/team_pics/assistant_manager_amaan_sayed.png", initial: "A" },
         { name: "Farhan Shaikh", role: "Web Developer", image: "/media/team_pics/web-developer-farhan_shaikh.png", initial: "F" },
         { name: "Omkar Poojari", role: "Production Manager", image: "/media/team_pics/dop_omkar_poojari.webp", initial: "O" },
+        { name: "Zaid Shaikh", role: "Performance Marketer", image: "/media/team_pics/P_marketer_Zaid-Shaikh.jpg", initial: "Z" },
     ];
 
     return (
