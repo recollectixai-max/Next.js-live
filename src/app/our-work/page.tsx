@@ -603,7 +603,7 @@ export default function OurWork() {
             id: "febae-web",
             name: "Febae",
             link: "https://febae.com/",
-            image: "/media/our_work_pics/Febae-web.png", // Web Dev image
+            image: "/media/our_work_pics/febae-web.png", // Web Dev image
             brandCategory: "Jewellery",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
