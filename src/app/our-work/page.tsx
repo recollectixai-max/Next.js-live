@@ -640,6 +640,46 @@ export default function OurWork() {
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
+            id: "keff-web",
+            name: "Keff Perfumes",
+            link: "https://keff.co.in/",
+            image: "/media/our_work_pics/keff-perfumes.png", // Web Dev image
+            brandCategory: "Perfumery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "isak-web",
+            name: "Isak Fragrances",
+            link: "https://www.isakfragrances.com/",
+            image: "/media/our_work_pics/isak-perfumes.png", // Web Dev image
+            brandCategory: "Perfumery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "aranyam-web",
+            name: "Aranyam Perfumes",
+            link: "https://www.aranyamperfumes.com/",
+            image: "/media/our_work_pics/aranyam-perfumes.png", // Web Dev image
+            brandCategory: "Perfumery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "ikyk-web",
+            name: "Ikyk Perfumes",
+            link: "https://ikyk.in/",
+            image: "/media/our_work_pics/ikyk-perfumes.png", // Web Dev image
+            brandCategory: "Perfumery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "boond-web",
+            name: "Boond Fragrances",
+            link: "boondfragrances.com",
+            image: "/media/our_work_pics/boond-perfumes.png", // Web Dev image
+            brandCategory: "Perfumery",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
             id: "belmont-london-web",
             name: "Belmont London",
             link: "https://belmontlondon.com/",
@@ -653,6 +693,46 @@ export default function OurWork() {
             link: "https://ecofacadeksa.com/",
             image: "/media/our_work_pics/ecofacade.png",
             brandCategory: "Architecture",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "studio-rigu-web",
+            name: "Studio Rigu",
+            link: "https://studiorigu.com/",
+            image: "/media/our_work_pics/studiorigu.png",
+            brandCategory: "Clothing",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "offduty-web",
+            name: "OffDuty",
+            link: "https://offduty.in/",
+            image: "/media/our_work_pics/offduty.png",
+            brandCategory: "Clothing",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "kharakapas-web",
+            name: "Kharakapas",
+            link: "https://kharakapas.com/",
+            image: "/media/our_work_pics/kharakapas.png",
+            brandCategory: "Clothing",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "shopmauve-web",
+            name: "ShopMauve",
+            link: "https://shopmauve.in/",
+            image: "/media/our_work_pics/shopmauve.png",
+            brandCategory: "Clothing",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+        {
+            id: "loomart-web",
+            name: "Loomart",
+            link: "https://loomart.com/",
+            image: "/media/our_work_pics/loomart.png",
+            brandCategory: "Clothing",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {

@@ -47,7 +47,7 @@ export default function About() {
         { name: "Zainul Shah", role: "COO", image: "/media/team_pics/partner_zainul_shah.webp", initial: "Z" },
         { name: "Aysha Shaikh", role: "Manager", image: "/media/team_pics/manager_aysha_shaikh.webp", initial: "A" },
         { name: "Amaan Sayed", role: "Assistant Manager", image: "/media/team_pics/assistant_manager_amaan_sayed.png", initial: "A" },
-        { name: "Abdur Raheem", role: "AI Engineer", image: "/media/team_pics/ai_engineer_farhan_sultan.png", initial: "A" },
+        { name: "Farhan Shaikh", role: "Web Developer", image: "/media/team_pics/web-developer-farhan_shaikh.png", initial: "F" },
         { name: "Omkar Poojari", role: "Production Manager", image: "/media/team_pics/dop_omkar_poojari.webp", initial: "O" },
     ];
 
@@ -344,6 +344,8 @@ export default function About() {
                         </div>
                     </div>
 
+                    
+
                     {/* CEO Featured Card */}
                     <div className="mb-16">
                         <div className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl overflow-hidden shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-1">
@@ -380,8 +382,34 @@ export default function About() {
                         </div>
                     </div>
 
+                    {/* Full Width Team Image */}
+                    <div className="mb-20">
+                        <div className="relative w-full h-[350px] md:h-[500px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl">
+                            <Image
+                                src="/media/team_pics/team.jpeg" // Replace with your team image
+                                alt="Our Team"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+
+                            {/* Optional Overlay */}
+                            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" /> */}
+
+                            {/* Optional Content */}
+                            {/* <div className="absolute bottom-0 left-0 p-8 md:p-12">
+                                <span className="text-primary font-bold tracking-widest uppercase text-sm block mb-2">
+                                    Meet The Team
+                                </span>
+                                <h3 className="text-4xl md:text-6xl font-black text-white leading-none">
+                                    Together We Build
+                                </h3>
+                            </div> */}
+                        </div>
+                    </div>
+
                     {/* Other Team Members - 2x2 Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {team.slice(1).map((member, index) => (
                             <div key={index} className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 h-[450px]">
                                 <Image
