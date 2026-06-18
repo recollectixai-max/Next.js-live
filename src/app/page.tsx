@@ -4,6 +4,7 @@ import { InfiniteMarquee } from "@/components/ui/InfiniteMarquee";
 import { CountUp } from "@/components/ui/CountUp";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   const clients = [
@@ -139,6 +140,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Full Width Team Image */}
+      <div className="mb-20 px-4 md:px-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center text-gray-900 mb-6">
+          OUR <span className="text-primary">TEAM</span>
+        </h2>
+        <div className="relative mx-auto w-full max-w-7xl h-[240px] sm:h-[350px] md:h-[500px] lg:h-[650px] rounded-2xl md:rounded-3xl overflow-hidden">
+          <Image
+            src="/media/team_pics/recollectix-team.png"
+            alt="Our Team"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        </div>
+      </div>
 
       {/* Motto / Call to Action */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white text-center">

@@ -71,7 +71,7 @@ export default function OurWork() {
             name: "Bosch",
             link: "/our-work/Influencer/bosch",
             image: "/media/our_work_pics/bosch-im.png",
-            brandCategory: "Automotive",
+            brandCategory: "Lifestyle",
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -160,7 +160,7 @@ export default function OurWork() {
             name: "Lakme",
             link: "/our-work/Influencer/lakme-im",
             image: "/media/our_work_pics/lakme-im.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -168,7 +168,7 @@ export default function OurWork() {
             name: "Pilgrim",
             link: "/our-work/Influencer/pilgrim-im",
             image: "/media/our_work_pics/pilgrim-im.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -176,7 +176,7 @@ export default function OurWork() {
             name: "Shama Perfumes",
             link: "/our-work/Influencer/shama-perfumes-im",
             image: "/media/our_work_pics/shama-perfumes-im.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Perfumery",
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -256,7 +256,7 @@ export default function OurWork() {
             name: "MnM",
             link: "/our-work/Influencer/mnm-im",
             image: "/media/our_work_pics/mnm-im.jpeg",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -275,7 +275,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "bakewills-sm",
             name: "Bakewills",
@@ -284,7 +284,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "rare-earth-sm",
             name: "Rare Earth",
@@ -293,7 +293,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "delhi-zaika-sm",
             name: "Delhi Zaika",
@@ -315,16 +315,16 @@ export default function OurWork() {
             name: "Sparkle Creations",
             link: "/our-work/Social/sparkle-creations",
             image: "/media/our_work_pics/Sparkle Creations.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "mnm-sm",
             name: "MnM",
             link: "/our-work/Social/mnm",
             image: "/media/our_work_pics/MnM.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -383,7 +383,7 @@ export default function OurWork() {
             brandCategory: "Healthcare",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "beach-house-sm",
             name: "Beach House",
@@ -392,7 +392,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "creamers-sm",
             name: "Creamers",
@@ -401,7 +401,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-       
+
         {
             id: "shawarma-cafe-sm",
             name: "Shawarma Cafe",
@@ -410,7 +410,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "taipei-sm",
             name: "Taipei",
@@ -419,7 +419,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "ajwa-sm",
             name: "Ajwa",
@@ -428,8 +428,8 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
-        
+
+
         {
             id: "urban-italiano-sm",
             name: "Urban Italiano",
@@ -438,7 +438,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "harish-lunch-home-sm",
             name: "Harish Lunch Home",
@@ -447,7 +447,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "istanbul-darbar-sm",
             name: "Istanbul Darbar",
@@ -456,7 +456,7 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "francos-pizzeria-sm",
             name: "Franco's Pizzeria",
@@ -465,14 +465,14 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
-        
+
+
         {
             id: "shama-perfumes-sm",
             name: "Shama Perfumes",
             link: "https://www.instagram.com/shamabrothersperfumers",
             image: "/media/our_work_pics/Shama Perfumes.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Perfumery",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -480,7 +480,7 @@ export default function OurWork() {
             name: "Al Hassan",
             link: "https://www.instagram.com/alhassan_india",
             image: "/media/our_work_pics/Al Hassan.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Perfumery",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -488,7 +488,7 @@ export default function OurWork() {
             name: "Meer Azam Perfumes",
             link: "https://www.instagram.com/meerazman_perfumes",
             image: "/media/our_work_pics/Meer Azam Perfumes.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Perfumery",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -496,17 +496,17 @@ export default function OurWork() {
             name: "Arbi Perfumes",
             link: "https://www.instagram.com/arbi_perfumes",
             image: "/media/our_work_pics/Arbi Perfumes.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Perfumery",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
-        
+
+
         {
             id: "king-choice-sm",
             name: "King Choice",
             link: "https://www.instagram.com/kingchoice_01",
             image: "/media/our_work_pics/King Choice.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -517,7 +517,7 @@ export default function OurWork() {
             brandCategory: "Real Estate",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "reality-route-sm",
             name: "Reality Route",
@@ -526,7 +526,7 @@ export default function OurWork() {
             brandCategory: "Real Estate",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "irth-umar-sm",
             name: "IRTH Umar",
@@ -535,7 +535,7 @@ export default function OurWork() {
             brandCategory: "Real Estate",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "design-matters-sm",
             name: "Design Matters",
@@ -560,9 +560,9 @@ export default function OurWork() {
             brandCategory: "Architecture",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
-        
-        
+
+
+
         {
             id: "k-square-sm",
             name: "K Square",
@@ -571,7 +571,7 @@ export default function OurWork() {
             brandCategory: "Personal Branding",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "ryz-nxt-sm",
             name: "Ryz Nxt",
@@ -588,7 +588,7 @@ export default function OurWork() {
             brandCategory: "Healthcare",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
 
         // Website Rows
         {
@@ -700,7 +700,7 @@ export default function OurWork() {
             name: "Studio Rigu",
             link: "https://studiorigu.com/",
             image: "/media/our_work_pics/studiorigu.png",
-            brandCategory: "Clothing",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
@@ -708,7 +708,7 @@ export default function OurWork() {
             name: "OffDuty",
             link: "https://offduty.in/",
             image: "/media/our_work_pics/offduty.png",
-            brandCategory: "Clothing",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
@@ -716,7 +716,7 @@ export default function OurWork() {
             name: "Kharakapas",
             link: "https://kharakapas.com/",
             image: "/media/our_work_pics/kharakapas.png",
-            brandCategory: "Clothing",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
@@ -724,7 +724,7 @@ export default function OurWork() {
             name: "ShopMauve",
             link: "https://shopmauve.in/",
             image: "/media/our_work_pics/shopmauve.png",
-            brandCategory: "Clothing",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
@@ -732,7 +732,7 @@ export default function OurWork() {
             name: "Loomart",
             link: "https://loomart.com/",
             image: "/media/our_work_pics/loomart.png",
-            brandCategory: "Clothing",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
@@ -773,7 +773,47 @@ export default function OurWork() {
             name: "Ananta",
             link: "https://www.instagram.com/anantahospitality",
             image: "/media/our_work_pics/Ananta.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Hospitality",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "ideal-sm",
+            name: "Ideal Restaurant",
+            link: "https://www.instagram.com/ideal_restaurant.colaba",
+            image: "/media/our_work_pics/ideal.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "inmandrin-sm",
+            name: "InMandrin",
+            link: "https://www.instagram.com/in.mandarin_asiankitchen",
+            image: "/media/our_work_pics/inmandrin.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "makcakes-sm",
+            name: "Mak Cakes",
+            link: "https://www.instagram.com/makcakesofficial",
+            image: "/media/our_work_pics/mak-cakes.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "baryal-aroma-sm",
+            name: "Baryal Aroma",
+            link: "https://www.instagram.com/baryalaroma",
+            image: "/media/our_work_pics/baryal-aroma.png",
+            brandCategory: "Perfumery",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "Ledomur-sm",
+            name: "Ledomur",
+            link: "https://www.instagram.com/ledomur.in",
+            image: "/media/our_work_pics/ledomur.png",
+            brandCategory: "Perfumery",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -781,7 +821,7 @@ export default function OurWork() {
             name: "Ghariza",
             link: "https://www.instagram.com/ghareeza__",
             image: "/media/our_work_pics/Ghariza.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -808,13 +848,13 @@ export default function OurWork() {
             brandCategory: "Real Estate",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "lakme-sm",
             name: "Lakme",
             link: "https://www.instagram.com/lakmeindia/",
             image: "/media/our_work_pics/Lakme.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -830,16 +870,16 @@ export default function OurWork() {
             name: "Maxx Value",
             link: "https://www.instagram.com/maxxvaluehotel_midc/",
             image: "/media/our_work_pics/Maxx Value.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Hospitality",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
-        
+
         {
             id: "pilgrim-sm",
             name: "Pilgrim",
             link: "https://www.instagram.com/discover.pilgrim/",
             image: "/media/our_work_pics/Pilgrim.png",
-            brandCategory: "Fashion",
+            brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -847,7 +887,7 @@ export default function OurWork() {
             name: "Top 10",
             link: "https://www.instagram.com/top10retail/",
             image: "/media/our_work_pics/Top10.png",
-            brandCategory: "Lifestyle",
+            brandCategory: "Technologies",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -874,9 +914,9 @@ export default function OurWork() {
             brandCategory: "Teaching",
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
-        
 
-        
+
+
     ];
 
     // Extract unique Brand Categories dynamically
@@ -920,201 +960,231 @@ export default function OurWork() {
                         From brand identity and social media to web design and performance marketing.
                     </p>
                 </div>
-            </section>
-
-            {/* Work Category Filter (Sticky Top) */}
-            <section className="px-4 sm:px-6 lg:px-8 pb-4 sticky top-16 z-40 bg-white/95 backdrop-blur-md pt-4 border-b border-gray-100 shadow-sm transition-all duration-300 flex flex-col gap-4">
-                <div className="max-w-7xl mx-auto flex justify-center w-full">
-                    <div className="flex flex-wrap justify-center gap-2 md:gap-3 w-full overflow-x-auto no-scrollbar pb-1 px-1">
-                        {workCategories.map((category) => (
-                            <button
-                                key={category}
-                                onClick={() => setSelectedWorkCategory(category)}
-                                className={`px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider transition-all duration-300 whitespace-nowrap flex-shrink-0 ${selectedWorkCategory === category
-                                    ? "bg-yellow-400 text-black shadow-md scale-105"
-                                    : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
-                                    }`}
-                            >
-                                {category}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Mobile Filter Trigger (Sticky & Integrated) */}
-                <div className="lg:hidden w-full max-w-md mx-auto">
-                    <button
-                        onClick={() => setIsMobileFilterOpen(true)}
-                        className="w-full flex items-center justify-between px-5 py-3 bg-gray-900 text-white rounded-xl font-bold uppercase tracking-wide shadow-md active:scale-95 transition-transform text-sm"
+                {/* Buttons */}
+                {/* Buttons */}
+                <div className="flex flex-wrap items-center justify-center gap-4 mt-10">
+                    <a
+                        href="https://drive.google.com/file/d/1-ZZy3W7fIJaaTMoU8U19UbrKhJwuPwGC/view?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm tracking-wide hover:opacity-90 transition"
                     >
-                        <span>Filter by Industry</span>
-                        <div className="flex items-center gap-2">
-                            <span className="text-gray-400 text-[10px] font-normal normal-case truncate max-w-[100px]">{selectedBrandCategory}</span>
-                            <Filter className="w-4 h-4" />
-                        </div>
-                    </button>
+                        Our Pitch Deck
+                    </a>
+                    <a
+
+                        href="https://drive.google.com/file/d/1lQw3iW5VSUzC_dgnl9K7kakJoRRJ8unq/view?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm tracking-wide hover:opacity-90 transition"
+                    >
+                        Influencer Marketing Deck
+                    </a>
+                    <a
+
+                        href="/services/ooh-advertising"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm tracking-wide hover:opacity-90 transition"
+                    >
+                       OOH Advertising
+                    </a>        
                 </div>
             </section>
 
-            {/* Main Content Area (Sidebar + Grid) */}
-            <section className="py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
-
-                    {/* Left Sidebar - Brand Category Filter (Desktop Only) */}
-                    <aside className="hidden lg:block w-64 shrink-0 lg:sticky lg:top-48 self-start h-fit overflow-y-auto max-h-[calc(100vh-200px)] no-scrollbar">
-                        <h3 className="text-lg font-black uppercase tracking-wide mb-6 text-gray-900 border-b border-gray-200 pb-2">
-                            Industry
-                        </h3>
-                        <div className="flex flex-col gap-2">
-                            {brandCategories.map((category) => (
-                                <button
-                                    key={category}
-                                    onClick={() => setSelectedBrandCategory(category)}
-                                    className={`text-left px-4 py-2 rounded-md text-sm font-medium transition-all ${selectedBrandCategory === category
-                                        ? "bg-gray-900 text-white shadow-md font-bold"
-                                        : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-                                        }`}
-                                >
-                                    {category}
-                                </button>
-                            ))}
-                        </div>
-                    </aside>
-
-                    {/* Right Grid - Portfolio */}
-                    <div className="flex-1">
-                        <motion.div
-                            layout
-                            className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16"
-                        >
-                            {filteredClients.map((client) => (
-                                <motion.div
-                                    key={client.id}
-                                    layout
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    exit={{ opacity: 0, scale: 0.95 }}
-                                    transition={{ duration: 0.4 }}
-                                    className="group cursor-pointer"
-                                >
-                                    <a
-                                        href={client.link}
-                                        
-                                        rel="noopener noreferrer"
-                                        className="block"
+                    {/* Work Category Filter (Sticky Top) */}
+                    <section className="px-4 sm:px-6 lg:px-8 pb-4 sticky top-16 z-40 bg-white/95 backdrop-blur-md pt-4 border-b border-gray-100 shadow-sm transition-all duration-300 flex flex-col gap-4">
+                        <div className="max-w-7xl mx-auto flex justify-center w-full">
+                            <div className="flex flex-wrap justify-center gap-2 md:gap-3 w-full overflow-x-auto no-scrollbar pb-1 px-1">
+                                {workCategories.map((category) => (
+                                    <button
+                                        key={category}
+                                        onClick={() => setSelectedWorkCategory(category)}
+                                        className={`px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm font-bold uppercase tracking-wider transition-all duration-300 whitespace-nowrap flex-shrink-0 ${selectedWorkCategory === category
+                                            ? "bg-yellow-400 text-black shadow-md scale-105"
+                                            : "bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900"
+                                            }`}
                                     >
-                                        {/* Image Container */}
-                                        {/* Image Container */}
-                                        <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 mb-5 relative shadow-sm transition-shadow group-hover:shadow-xl group">
-                                            <Image
-                                                src={client.image}
-                                                alt={client.name}
-                                                fill
-                                                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                            />
-                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-
-                                            {/* Hover Overlay Icon */}
-                                            <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2.5 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md z-20">
-                                                <ArrowUpRight className="w-4 h-4 text-black" />
-                                            </div>
-                                        </div>
-
-                                        {/* Content */}
-                                        <div className="flex items-start justify-between border-b border-gray-100 pb-4 group-hover:border-gray-900 transition-colors duration-300">
-                                            <div>
-                                                <h3 className="text-xl md:text-2xl font-black text-gray-900 uppercase mb-1 leading-tight">
-                                                    {client.name}
-                                                </h3>
-                                                <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">
-                                                    {client.brandCategory}
-                                                </p>
-                                            </div>
-                                            <ArrowUpRight className="w-6 h-6 text-gray-300 group-hover:text-black transition-colors duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-                                        </div>
-                                    </a>
-                                </motion.div>
-                            ))}
-                        </motion.div>
-
-                        {filteredClients.length === 0 && (
-                            <div className="text-center py-20 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
-                                <p className="text-gray-400 text-lg font-medium">No projects found in this category yet.</p>
+                                        {category}
+                                    </button>
+                                ))}
                             </div>
-                        )}
-                    </div>
-                </div>
-            </section>
+                        </div>
 
-            {/* Mobile Filter Drawer (Motion Drawer) */}
-            <AnimatePresence>
-                {isMobileFilterOpen && (
-                    <>
-                        {/* Backdrop */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            onClick={() => setIsMobileFilterOpen(false)}
-                            className="fixed inset-0 bg-black/60 z-50 lg:hidden backdrop-blur-sm"
-                        />
+                        {/* Mobile Filter Trigger (Sticky & Integrated) */}
+                        <div className="lg:hidden w-full max-w-md mx-auto">
+                            <button
+                                onClick={() => setIsMobileFilterOpen(true)}
+                                className="w-full flex items-center justify-between px-5 py-3 bg-gray-900 text-white rounded-xl font-bold uppercase tracking-wide shadow-md active:scale-95 transition-transform text-sm"
+                            >
+                                <span>Filter by Industry</span>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-gray-400 text-[10px] font-normal normal-case truncate max-w-[100px]">{selectedBrandCategory}</span>
+                                    <Filter className="w-4 h-4" />
+                                </div>
+                            </button>
+                        </div>
+                    </section>
 
-                        {/* Drawer */}
-                        <motion.div
-                            initial={{ y: "100%" }}
-                            animate={{ y: 0 }}
-                            exit={{ y: "100%" }}
-                            transition={{ type: "spring", damping: 25, stiffness: 300 }}
-                            className="fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl z-50 lg:hidden h-[85vh] flex flex-col shadow-2xl"
-                        >
-                            {/* Drawer Header */}
-                            <div className="flex items-center justify-between p-6 border-b border-gray-100">
-                                <h3 className="text-xl font-black uppercase tracking-wide text-gray-900">
-                                    Filter Projects
+                    {/* Main Content Area (Sidebar + Grid) */}
+                    <section className="py-8 lg:py-12 px-4 sm:px-6 lg:px-8">
+                        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+
+                            {/* Left Sidebar - Brand Category Filter (Desktop Only) */}
+                            <aside className="hidden lg:block w-64 shrink-0 lg:sticky lg:top-48 self-start h-fit overflow-y-auto max-h-[calc(100vh-200px)] no-scrollbar">
+                                <h3 className="text-lg font-black uppercase tracking-wide mb-6 text-gray-900 border-b border-gray-200 pb-2">
+                                    Industry
                                 </h3>
-                                <button
-                                    onClick={() => setIsMobileFilterOpen(false)}
-                                    className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
-                                >
-                                    <X className="w-6 h-6 text-gray-900" />
-                                </button>
-                            </div>
+                                <div className="flex flex-col gap-2">
+                                    {brandCategories.map((category) => (
+                                        <button
+                                            key={category}
+                                            onClick={() => setSelectedBrandCategory(category)}
+                                            className={`text-left px-4 py-2 rounded-md text-sm font-medium transition-all ${selectedBrandCategory === category
+                                                ? "bg-gray-900 text-white shadow-md font-bold"
+                                                : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
+                                                }`}
+                                        >
+                                            {category}
+                                        </button>
+                                    ))}
+                                </div>
+                            </aside>
 
-                            {/* Drawer Content */}
-                            <div className="flex-1 overflow-y-auto p-6">
-                                <div className="space-y-6">
-                                    <div>
-                                        <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">
-                                            Select Industry
-                                        </h4>
-                                        <div className="grid grid-cols-1 gap-2">
-                                            {brandCategories.map((category) => (
-                                                <button
-                                                    key={category}
-                                                    onClick={() => {
-                                                        setSelectedBrandCategory(category);
-                                                        setIsMobileFilterOpen(false);
-                                                    }}
-                                                    className={`w-full text-left px-5 py-4 rounded-xl text-base font-bold transition-all flex justify-between items-center ${selectedBrandCategory === category
-                                                        ? "bg-yellow-400 text-black shadow-md"
-                                                        : "bg-gray-50 text-gray-600 hover:bg-gray-100"
-                                                        }`}
-                                                >
-                                                    <span>{category}</span>
-                                                    {selectedBrandCategory === category && (
-                                                        <div className="w-2 h-2 rounded-full bg-black" />
-                                                    )}
-                                                </button>
-                                            ))}
+                            {/* Right Grid - Portfolio */}
+                            <div className="flex-1">
+                                <motion.div
+                                    layout
+                                    className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16"
+                                >
+                                    {filteredClients.map((client) => (
+                                        <motion.div
+                                            key={client.id}
+                                            layout
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            exit={{ opacity: 0, scale: 0.95 }}
+                                            transition={{ duration: 0.4 }}
+                                            className="group cursor-pointer"
+                                        >
+                                            <a
+                                                href={client.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="block"
+                                            >
+                                                {/* Image Container */}
+                                                {/* Image Container */}
+                                                <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 mb-5 relative shadow-sm transition-shadow group-hover:shadow-xl group">
+                                                    <Image
+                                                        src={client.image}
+                                                        alt={client.name}
+                                                        fill
+                                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    />
+                                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+
+                                                    {/* Hover Overlay Icon */}
+                                                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2.5 opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-md z-20">
+                                                        <ArrowUpRight className="w-4 h-4 text-black" />
+                                                    </div>
+                                                </div>
+
+                                                {/* Content */}
+                                                <div className="flex items-start justify-between border-b border-gray-100 pb-4 group-hover:border-gray-900 transition-colors duration-300">
+                                                    <div>
+                                                        <h3 className="text-xl md:text-2xl font-black text-gray-900 uppercase mb-1 leading-tight">
+                                                            {client.name}
+                                                        </h3>
+                                                        <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">
+                                                            {client.brandCategory}
+                                                        </p>
+                                                    </div>
+                                                    <ArrowUpRight className="w-6 h-6 text-gray-300 group-hover:text-black transition-colors duration-300 transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                                                </div>
+                                            </a>
+                                        </motion.div>
+                                    ))}
+                                </motion.div>
+
+                                {filteredClients.length === 0 && (
+                                    <div className="text-center py-20 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
+                                        <p className="text-gray-400 text-lg font-medium">No projects found in this category yet.</p>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Mobile Filter Drawer (Motion Drawer) */}
+                    <AnimatePresence>
+                        {isMobileFilterOpen && (
+                            <>
+                                {/* Backdrop */}
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    onClick={() => setIsMobileFilterOpen(false)}
+                                    className="fixed inset-0 bg-black/60 z-50 lg:hidden backdrop-blur-sm"
+                                />
+
+                                {/* Drawer */}
+                                <motion.div
+                                    initial={{ y: "100%" }}
+                                    animate={{ y: 0 }}
+                                    exit={{ y: "100%" }}
+                                    transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                                    className="fixed bottom-0 left-0 right-0 bg-white rounded-t-3xl z-50 lg:hidden h-[85vh] flex flex-col shadow-2xl"
+                                >
+                                    {/* Drawer Header */}
+                                    <div className="flex items-center justify-between p-6 border-b border-gray-100">
+                                        <h3 className="text-xl font-black uppercase tracking-wide text-gray-900">
+                                            Filter Projects
+                                        </h3>
+                                        <button
+                                            onClick={() => setIsMobileFilterOpen(false)}
+                                            className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
+                                        >
+                                            <X className="w-6 h-6 text-gray-900" />
+                                        </button>
+                                    </div>
+
+                                    {/* Drawer Content */}
+                                    <div className="flex-1 overflow-y-auto p-6">
+                                        <div className="space-y-6">
+                                            <div>
+                                                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">
+                                                    Select Industry
+                                                </h4>
+                                                <div className="grid grid-cols-1 gap-2">
+                                                    {brandCategories.map((category) => (
+                                                        <button
+                                                            key={category}
+                                                            onClick={() => {
+                                                                setSelectedBrandCategory(category);
+                                                                setIsMobileFilterOpen(false);
+                                                            }}
+                                                            className={`w-full text-left px-5 py-4 rounded-xl text-base font-bold transition-all flex justify-between items-center ${selectedBrandCategory === category
+                                                                ? "bg-yellow-400 text-black shadow-md"
+                                                                : "bg-gray-50 text-gray-600 hover:bg-gray-100"
+                                                                }`}
+                                                        >
+                                                            <span>{category}</span>
+                                                            {selectedBrandCategory === category && (
+                                                                <div className="w-2 h-2 rounded-full bg-black" />
+                                                            )}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </motion.div>
-                    </>
-                )}
-            </AnimatePresence>
-        </div>
-    );
+                                </motion.div>
+                            </>
+                        )}
+                    </AnimatePresence>
+                </div>
+                );
 }

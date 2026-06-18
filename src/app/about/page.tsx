@@ -384,7 +384,7 @@ export default function About() {
                     </div>
 
                     {/* Full Width Team Image */}
-                    <div className="mb-20">
+                    {/* <div className="mb-20">
                         <div className="relative w-full h-[350px] md:h-[500px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/media/team_pics/team.jpeg" // Replace with your team image
@@ -393,21 +393,8 @@ export default function About() {
                                 className="object-cover"
                                 priority
                             />
-
-                            {/* Optional Overlay */}
-                            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" /> */}
-
-                            {/* Optional Content */}
-                            {/* <div className="absolute bottom-0 left-0 p-8 md:p-12">
-                                <span className="text-primary font-bold tracking-widest uppercase text-sm block mb-2">
-                                    Meet The Team
-                                </span>
-                                <h3 className="text-4xl md:text-6xl font-black text-white leading-none">
-                                    Together We Build
-                                </h3>
-                            </div> */}
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Other Team Members - 2x2 Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
