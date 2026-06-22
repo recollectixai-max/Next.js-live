@@ -571,6 +571,22 @@ export default function OurWork() {
             brandCategory: "Personal Branding",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        {
+            id: "Abrar-teli-sm",
+            name: "Abrar Teli",
+            link: "https://www.instagram.com/abrarteli",
+            image: "/media/our_work_pics/abrarteli.png",
+            brandCategory: "Personal Branding",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "Bhavesh-kaware-sm",
+            name: "Bhavesh Kaware",
+            link: "https://www.instagram.com/propertytransactionguru",
+            image: "/media/our_work_pics/bhaveshkaware.png",
+            brandCategory: "Personal Branding",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
 
         {
             id: "ryz-nxt-sm",
@@ -793,6 +809,14 @@ export default function OurWork() {
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
+            id: "jps-sm",
+            name: "JPS",
+            link: "https://www.instagram.com/jps_mastmalvani",
+            image: "/media/our_work_pics/jps.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
             id: "makcakes-sm",
             name: "Mak Cakes",
             link: "https://www.instagram.com/makcakesofficial",
@@ -821,6 +845,14 @@ export default function OurWork() {
             name: "Ghariza",
             link: "https://www.instagram.com/ghareeza__",
             image: "/media/our_work_pics/Ghariza.png",
+            brandCategory: "Fashion & Clothing",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "cotton-paradise-sm",
+            name: "Cotton Paradise",
+            link: "https://www.instagram.com/cottonparadiseindia",
+            image: "/media/our_work_pics/cotton-paradise.png",
             brandCategory: "Fashion & Clothing",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
@@ -938,7 +970,7 @@ export default function OurWork() {
         }
 
         // Brand Category Filter
-        const matchesBrand = selectedBrandCategory === "All" || client.brandCategory === selectedBrandCategory;
+        const matchesBrand = selectedBrandCategory === "All" || (Array.isArray(client.brandCategory) ? client.brandCategory.includes(selectedBrandCategory) : client.brandCategory === selectedBrandCategory);
 
         return matchesWork && matchesBrand;
     });
@@ -988,6 +1020,15 @@ export default function OurWork() {
                         className="px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm tracking-wide hover:opacity-90 transition"
                     >
                        OOH Advertising
+                    </a>        
+                    <a
+
+                        href="/production"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm tracking-wide hover:opacity-90 transition"
+                    >
+                       Production
                     </a>        
                 </div>
             </section>
