@@ -264,7 +264,7 @@ export default function OurWork() {
             name: "K Square",
             link: "/our-work/Influencer/k-square-im",
             image: "/media/our_work_pics/k-square-im.jpeg",
-            brandCategory: "Personal Branding",
+            brandCategory: "Hospitality",
             services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
         },
         {
@@ -841,8 +841,8 @@ export default function OurWork() {
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
-            id: "ghariza-sm",
-            name: "Ghariza",
+            id: "ghareeza-sm",
+            name: "Ghareeza",
             link: "https://www.instagram.com/ghareeza__",
             image: "/media/our_work_pics/Ghariza.png",
             brandCategory: "Fashion & Clothing",
