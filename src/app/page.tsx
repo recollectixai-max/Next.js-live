@@ -29,7 +29,7 @@ export default function Home() {
         <InfiniteMarquee
           items={clients.map((c, i) => (
             <div key={i} className="flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 px-8">
-              <img src={c.logo} alt={c.name} className="h-12 md:h-16 object-contain" />
+              <img src={c.logo} alt={c.name} className="w-full h-full md:h-16 object-contain" />
             </div>
           ))}
           speed="normal"

@@ -88,7 +88,7 @@ export const InfiniteMarquee = ({
             >
                 {items.map((item, idx) => (
                     <li
-                        className="w-[150px] md:w-[200px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-200 bg-white/5 px-8 py-6 md:w-[350px]"
+                        className="w-[250px] md:w-[200px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-200 bg-white/5 px-8 py-6 md:w-[350px]"
                         style={{
                             background: "rgba(255,255,255,0.01)",
                         }}
