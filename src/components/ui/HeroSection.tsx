@@ -67,16 +67,16 @@ export function HeroSection() {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="mx-auto w-full max-w-[500px] lg:max-w-none relative aspect-video lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-gray-100 mt-8 lg:mt-0"
+                        className="mx-auto w-full max-w-[500px] lg:max-w-none relative aspect-video lg:aspect-auto lg:h-[350px] rounded-3xl overflow-hidden shadow-2xl bg-gray-100 mt-8 lg:mt-0"
                     >
                         <video
                             autoPlay
                             loop
                             muted
                             playsInline
-                            className="w-full h-full object-cover"
+                            className="block w-full h-full aspect-video object-cover"
                         >
-                            <source src="/media/website-display.mp4" type="video/mp4" />
+                            <source src="/media/about_clip_2.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
 

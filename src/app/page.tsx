@@ -129,7 +129,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 md:px-8">
           <div className="relative overflow-hidden rounded-3xl bg-black shadow-2xl">
             <video
-              src="/media/website-display.mp4"
+              src="/media/hero_bg.mp4"
               className="block w-full aspect-video object-cover"
               autoPlay
               muted
