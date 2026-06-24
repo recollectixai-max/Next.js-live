@@ -392,6 +392,14 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        {
+            id: "birra-im",
+            name: "Birra Fragrances",
+            link: "https://www.instagram.com/birrafragrancesllp",
+            image: "/media/our_work_pics/birra-im.png",
+            brandCategory: "Perfumery",
+            services: { socialMedia: false, influencerMarketing: true, websiteDevelopment: false, publicRelations: false }
+        },
 
         {
             id: "creamers-sm",
