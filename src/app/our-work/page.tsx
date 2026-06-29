@@ -455,6 +455,30 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        {
+            id: "ali-baba-sm",
+            name: "Ali Baba Cafe",
+            link: "https://www.instagram.com/alibabacafe.mumbai",
+            image: "/media/our_work_pics/alibaba.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "bae-laban-sm",
+            name: "Bae Laban",
+            link: "https://www.instagram.com/bae.laban",
+            image: "/media/our_work_pics/bae-laban.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "queen-mary-sm",
+            name: "Queen Mary",
+            link: "https://www.instagram.com/queen_mary_restaurant",
+            image: "/media/our_work_pics/queen-mary.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
 
         {
             id: "istanbul-darbar-sm",
