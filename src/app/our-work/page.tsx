@@ -688,6 +688,15 @@ export default function OurWork() {
             services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
         },
         {
+            id: "sdee-web",
+            name: "SDEE",
+            link: "https://www.sdeemultiservices.com/",
+            image: "/media/our_work_pics/sdee.png", // Web Dev image
+            brandCategory: "Real Estate",
+            services: { socialMedia: false, influencerMarketing: false, websiteDevelopment: true, publicRelations: false }
+        },
+
+        {
             id: "keff-web",
             name: "Keff Perfumes",
             link: "https://keff.co.in/",
