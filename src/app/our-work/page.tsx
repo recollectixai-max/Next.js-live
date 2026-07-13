@@ -874,6 +874,30 @@ export default function OurWork() {
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
         {
+            id: "saiveg-sm",
+            name: "Sai Veg",
+            link: "https://www.instagram.com/saivegworld",
+            image: "/media/our_work_pics/saiveg.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "qaswa-sm",
+            name: "Qaswa Kitchen",
+            link: "https://www.instagram.com/19_by_qaswa_kitchen_co",
+            image: "/media/our_work_pics/qaswa.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "fitness11-sm",
+            name: "Fitness 11",
+            link: "https://www.instagram.com/fitness11thegym",
+            image: "/media/our_work_pics/fitness11.png",
+            brandCategory: "Lifestyle",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
             id: "Ledomur-sm",
             name: "Ledomur",
             link: "https://www.instagram.com/ledomur.in",
