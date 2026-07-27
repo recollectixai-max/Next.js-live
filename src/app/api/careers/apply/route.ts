@@ -71,7 +71,11 @@ export async function POST(request: Request) {
         const smtpPort = Number(process.env.SMTP_PORT ?? "587");
         const smtpUser = getRequiredEnv("SMTP_USER");
         const smtpPass = getRequiredEnv("SMTP_PASS");
-        const careersInbox = process.env.CAREERS_INBOX ?? "hr@recollectix.com";
+        const careersInboxRaw = process.env.CAREERS_INBOX ?? "hr@recollectix.com, shaikhfarhan.rx@gmail.com";
+        const careersInbox = careersInboxRaw
+            .split(/[;,]/)
+            .map((s) => s.trim())
+            .filter(Boolean);
         const smtpFrom = process.env.SMTP_FROM ?? smtpUser;
         const escapedName = escapeHtml(name);
         const escapedEmail = escapeHtml(email);
@@ -90,9 +94,8 @@ export async function POST(request: Request) {
 
         const resumeBuffer = Buffer.from(await resume.arrayBuffer());
 
-        await transporter.sendMail({
+        const mailOptions = {
             from: smtpFrom,
-            to: careersInbox,
             replyTo: email,
             subject: `New Career Application - ${role}`,
             text: [
@@ -122,7 +125,10 @@ export async function POST(request: Request) {
                     contentType: resume.type || undefined,
                 },
             ],
-        });
+        };
+
+        // Send one email per recipient to allow separate delivery and tracking
+        await Promise.all(careersInbox.map((to) => transporter.sendMail({ ...mailOptions, to })));
 
         return NextResponse.json(
             { message: "Application submitted successfully." },

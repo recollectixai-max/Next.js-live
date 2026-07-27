@@ -418,6 +418,22 @@ export default function OurWork() {
             brandCategory: "Food & Beverages",
             services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
         },
+        {
+            id: "kakorihouse-sm",
+            name: "Kakori House",
+            link: "https://www.instagram.com/kakorihouse",
+            image: "/media/our_work_pics/kakorihouse.png",
+            brandCategory: "Food & Beverages",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
+        {
+            id: "soulsprout-sm",
+            name: "Soul Sprout",
+            link: "https://www.instagram.com/soulsprout.studio",
+            image: "/media/our_work_pics/soulsprout.png",
+            brandCategory: "Personal Branding",
+            services: { socialMedia: true, influencerMarketing: false, websiteDevelopment: false, publicRelations: false }
+        },
 
         {
             id: "taipei-sm",
