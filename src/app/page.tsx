@@ -5,8 +5,19 @@ import { CountUp } from "@/components/ui/CountUp";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import SpotlightCarousel from "@/components/SpotlightCarousel";
 
 export default function Home() {
+
+  const items = [
+    { id: 1, brand: "Tarboush", logo: "./tarboush-logo.png", mediaType: "video", media: "./tarboush-reel.mp4" },
+    { id: 2, brand: "Mak Cakes", logo: "./mak-logo.png", mediaType: "video", media: "./mak-reel.mp4" },
+    { id: 3, brand: "Benita Rolls", logo: "./benita-logo.png", mediaType: "video", media: "./benita-reel-1.mp4" },
+    { id: 4, brand: "Timepass Chai", logo: "./tp-logo.png", mediaType: "video", media: "./tp-reel.mp4" },
+    { id: 5, brand: "Baba Falooda", logo: "./baba-logo.png", mediaType: "video", media: "./baba-reel.mp4" },
+    { id: 6, brand: "Benita Rolls", logo: "./benita-logo.png", mediaType: "video", media: "./benita-reel-2.mp4" },
+  ];
+
   const clients = [
     { name: "Brand 1", logo: "/media/brand.png" },
     { name: "Brand 2", logo: "/media/brand_2.png" },
@@ -98,6 +109,8 @@ export default function Home() {
           <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
         </div>
       </section>
+
+      <SpotlightCarousel items={items} interval={4500} title="Our work in spotlight" />
 
       {/* Amplifying Brand Reach */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
