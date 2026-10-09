@@ -2,10 +2,24 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+type Language = "en" | "ar";
+
+type GoogleTranslateWindow = Window & {
+    google?: {
+        translate?: {
+            TranslateElement?: new (
+                options: { pageLanguage: string; includedLanguages: string; autoDisplay: boolean },
+                elementId: string
+            ) => unknown;
+        };
+    };
+    googleTranslateElementInit?: () => void;
+};
 
 const navItems = [
     { name: "Home", href: "/" },
@@ -18,8 +32,97 @@ const navItems = [
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [language, setLanguage] = useState<Language>("en");
+    const [translationError, setTranslationError] = useState(false);
     const pathname = usePathname();
     const [isAboutHero, setIsAboutHero] = useState(false);
+    const pendingLanguage = useRef<Language | null>(null);
+
+    const applyLanguage = useCallback((nextLanguage: Language) => {
+        const translateElement = document.getElementById("google_translate_element");
+        const languageSelect = translateElement?.querySelector<HTMLSelectElement>("select.goog-te-combo");
+
+        if (!languageSelect) {
+            pendingLanguage.current = nextLanguage;
+            return false;
+        }
+
+        pendingLanguage.current = null;
+        languageSelect.value = nextLanguage === "ar" ? "ar" : "";
+        languageSelect.dispatchEvent(new Event("change"));
+        document.documentElement.lang = nextLanguage;
+        document.documentElement.dir = nextLanguage === "ar" ? "rtl" : "ltr";
+        return true;
+    }, []);
+
+    useEffect(() => {
+        const googleWindow = window as GoogleTranslateWindow;
+        const widget = document.getElementById("google_translate_element");
+        if (!widget) return;
+
+        const initializeWidget = () => {
+            const TranslateElement = googleWindow.google?.translate?.TranslateElement;
+            if (TranslateElement && !widget.querySelector("select.goog-te-combo")) {
+                new TranslateElement(
+                    { pageLanguage: "en", includedLanguages: "ar", autoDisplay: false },
+                    "google_translate_element"
+                );
+            }
+        };
+
+        googleWindow.googleTranslateElementInit = initializeWidget;
+
+        const observer = new MutationObserver(() => {
+            if (pendingLanguage.current) {
+                applyLanguage(pendingLanguage.current);
+            }
+        });
+        observer.observe(widget, { childList: true, subtree: true });
+
+        if (googleWindow.google?.translate?.TranslateElement) {
+            initializeWidget();
+        } else if (!document.getElementById("google-translate-script")) {
+            const script = document.createElement("script");
+            script.id = "google-translate-script";
+            script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+            script.async = true;
+            script.onerror = () => {
+                pendingLanguage.current = null;
+                setLanguage("en");
+                setTranslationError(true);
+            };
+            document.head.appendChild(script);
+        }
+
+        return () => observer.disconnect();
+    }, [applyLanguage]);
+
+    useEffect(() => {
+        if (language !== "ar") return;
+        const timeout = window.setTimeout(() => applyLanguage("ar"), 250);
+        return () => window.clearTimeout(timeout);
+    }, [applyLanguage, language, pathname]);
+
+    const handleLanguageChange = (nextLanguage: Language) => {
+        setLanguage(nextLanguage);
+        setTranslationError(false);
+        applyLanguage(nextLanguage);
+    };
+
+    const languageSelector = (
+        <label className="inline-flex items-center">
+            <span className="sr-only">Choose language</span>
+            <select
+                value={language}
+                onChange={(event) => handleLanguageChange(event.target.value === "ar" ? "ar" : "en")}
+                aria-label="Choose language"
+                className="rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </label>
+    );
 
     // Hide Navbar logo on About page until scrolled past hero section
     useEffect(() => {
@@ -80,6 +183,7 @@ export function Navbar() {
                                 </Link>
                             );
                         })}
+                        {languageSelector}
                         <Link
                             href="/contact"
                             className="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/25"
@@ -100,6 +204,17 @@ export function Navbar() {
                 </div>
             </div>
 
+            <div
+                id="google_translate_element"
+                aria-hidden="true"
+                className="pointer-events-none absolute h-px w-px overflow-hidden opacity-0"
+            />
+            {translationError && (
+                <p role="status" className="absolute right-4 top-full mt-2 rounded-md bg-red-50 px-3 py-2 text-sm text-red-700 shadow">
+                    Arabic translation could not be loaded. Please try again later.
+                </p>
+            )}
+
             {/* Mobile menu */}
             {isOpen && (
                 <div className="md:hidden absolute top-20 left-0 right-0 bg-white border-b border-gray-100 shadow-xl animate-in slide-in-from-top-5 duration-200">
@@ -114,6 +229,9 @@ export function Navbar() {
                                 {item.name}
                             </Link>
                         ))}
+                        <div className="px-4 py-3">
+                            {languageSelector}
+                        </div>
                         <div className="pt-4 mt-2 border-t border-gray-100">
                             <Link
                                 href="/contact"
