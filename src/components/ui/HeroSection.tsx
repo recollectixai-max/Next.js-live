@@ -19,7 +19,7 @@ export function HeroSection() {
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             className="space-y-4"
                         >
-                            <h1
+                            {/* <h1
                                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.9] uppercase"
                                 style={{
                                     backgroundImage: 'url(/media/hero_text_bg.gif)',
@@ -31,7 +31,7 @@ export function HeroSection() {
                             >
                                 <span className="block">Recollectix</span>
                                 <span className="block">Media</span>
-                            </h1>
+                            </h1> */}
 
                             <div className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-700 flex flex-wrap items-center gap-2 lg:gap-3 py-2">
                                 <span>Where brand brilliance meets</span>

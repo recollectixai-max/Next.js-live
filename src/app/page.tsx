@@ -1,58 +1,120 @@
 import { HeroSection } from "@/components/ui/HeroSection";
 import InteractiveBentoGrid from "@/components/ui/InteractiveBentoGrid";
-import { InfiniteMarquee } from "@/components/ui/InfiniteMarquee";
 import { CountUp } from "@/components/ui/CountUp";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import SpotlightCarousel from "@/components/SpotlightCarousel";
+import GraphicsShowcase from "@/components/GraphicsShowcase";
+import BrandLogoShowcase from "@/components/BrandLogoShowcase";
+import CurvedGallerySection from "@/components/CurvedGallerySection";
+import PhoneMarqueeShowcase from "@/components/PhoneMarqueeShowcase";
+import ShowcaseHero from "@/components/component";
 
 export default function Home() {
 
   const items = [
+    { id: 5, brand: "Baba Falooda", logo: "./baba-logo.png", mediaType: "video", media: "./baba-reel.mp4" },
     { id: 1, brand: "Tarboush", logo: "./tarboush-logo.png", mediaType: "video", media: "./tarboush-reel.mp4" },
     { id: 2, brand: "Mak Cakes", logo: "./mak-logo.png", mediaType: "video", media: "./mak-reel.mp4" },
     { id: 3, brand: "Benita Rolls", logo: "./benita-logo.png", mediaType: "video", media: "./benita-reel-1.mp4" },
     { id: 4, brand: "Timepass Chai", logo: "./tp-logo.png", mediaType: "video", media: "./tp-reel.mp4" },
-    { id: 5, brand: "Baba Falooda", logo: "./baba-logo.png", mediaType: "video", media: "./baba-reel.mp4" },
     { id: 6, brand: "Benita Rolls", logo: "./benita-logo.png", mediaType: "video", media: "./benita-reel-2.mp4" },
   ];
 
   const clients = [
-    { name: "Brand 1", logo: "/media/brand.png" },
-    { name: "Brand 2", logo: "/media/brand_2.png" },
-    { name: "Brand 3", logo: "/media/brand_3.png" },
-    { name: "Brand 4", logo: "/media/brand_4.png" },
-    { name: "Brand 5", logo: "/media/brand_5.png" },
-    { name: "Brand 6", logo: "/media/brand_6.png" },
-    { name: "Brand 7", logo: "/media/brand_7.png" },
-    { name: "Brand 8", logo: "/media/brand_8.png" },
-    { name: "Brand 9", logo: "/media/brand_9.png" },
+    { id: "brand-1", name: "Brand 1", src: "/media/brand.png" },
+    { id: "brand-2", name: "Brand 2", src: "/media/brand_2.png" },
+    { id: "brand-3", name: "Brand 3", src: "/media/brand_3.png" },
+    { id: "brand-4", name: "Brand 4", src: "/media/brand_4.png" },
+    { id: "brand-5", name: "Brand 5", src: "/media/brand_5.png" },
+    { id: "brand-6", name: "Brand 6", src: "/media/brand_6.png" },
+    { id: "brand-7", name: "Brand 7", src: "/media/brand_7.png" },
+    { id: "brand-8", name: "Brand 8", src: "/media/brand_8.png" },
+    { id: "brand-9", name: "Brand 9", src: "/media/brand_9.png" },
+  ];
+
+  const graphics = [
+    { id: "graphics-1", src: "/gd1.jpg", alt: "Dales Eden brand campaign artwork" },
+    { id: "graphics-2", src: "/gd2.jpg", alt: "Brand campaign graphic design" },
+    { id: "graphics-3", src: "/gd3.jpg", alt: "Anichee campaign graphic" },
+    { id: "graphics-4", src: "/gd4.jpg", alt: "Bakery campaign artwork" },
+    { id: "graphics-5", src: "/gd5.jpg", alt: "Campaign creative artwork" },
+    { id: "graphics-6", src: "/gd6.jpg", alt: "Creative brand campaign" },
+    { id: "graphics-7", src: "/gd7.jpg", alt: "Brand promotional graphic" },
+    { id: "graphics-8", src: "/gd8.jpg", alt: "Campaign visual design" },
+  ];
+
+  const viralreels = [
+    { id: "reel-1", src: "/eden-v.mp4", alt: "Tarboush campaign reel", mediaType: "video" as const, viewsText: "12.7M Views" },
+    { id: "reel-2", src: "/thop-v.mp4", alt: "Mak Cakes campaign reel", mediaType: "video" as const, viewsText: "2M Views" },
+    { id: "reel-3", src: "/evo-v.mp4", alt: "Benita Rolls campaign reel", mediaType: "video" as const, viewsText: "97K Views" },
+    { id: "reel-4", src: "/cremure-v.mp4", alt: "Timepass Chai campaign reel", mediaType: "video" as const, viewsText: "310K Views" },
+    { id: "reel-5", src: "/ideal-f.mp4", alt: "Baba Falooda campaign reel", mediaType: "video" as const, viewsText: "97.3K Views" },
+  ];
+
+  const curvedreels = [
+    { id: "reel-1", src: "/cremure-a.mp4", alt: "Tarboush campaign reel", mediaType: "video" as const },
+    { id: "reel-5", src: "/f2.mp4", alt: "Baba Falooda campaign reel", mediaType: "video" as const },
+    { id: "reel-2", src: "/punjabi-a.mp4", alt: "Mak Cakes campaign reel", mediaType: "video" as const },
+    { id: "reel-4", src: "/f1.mp4", alt: "Timepass Chai campaign reel", mediaType: "video" as const },
+    { id: "reel-3", src: "/evo-a.mp4", alt: "Benita Rolls campaign reel", mediaType: "video" as const },
+    { id: "reel-6", src: "/f3.mp4", alt: "Benita Rolls campaign reel", mediaType: "video" as const },
   ];
 
   return (
     <div className="bg-white">
       <HeroSection />
 
-      {/* Client Marquee */}
-      <section className="py-12 bg-white border-b border-gray-100">
-        <p className="text-center text-sm font-semibold text-gray-400 mb-8 uppercase tracking-widest">Trusted by industry leaders</p>
-        <InfiniteMarquee
-          items={clients.map((c, i) => (
-            <div key={i} className="flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 px-8">
-              <img src={c.logo} alt={c.name} className="w-full h-full md:h-16 object-contain" />
-            </div>
-          ))}
-          speed="normal"
+      <PhoneMarqueeShowcase
+        images={viralreels}
+        heading="From Reel to Real Reach"
+        subtitle="Short-form stories. Long-lasting impressions."
+        className="bg-white text-gray-900 pb-8"
+      />
+
+      <BrandLogoShowcase
+        logos={clients}
+        heading="Trusted by industry leaders"
+        subtitle="Creative collaborations across industries."
+        className="bg-white text-gray-900 pb-8"
+      />
+
+      <div className="text-center pb-8">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
+          Visuals That Speak
+        </h2>
+        <GraphicsShowcase
+          posts={graphics}
+          ariaLabel="Selected Recollectix campaign graphics"
+          className=""
         />
-      </section>
+      </div>
+
+
+      <ShowcaseHero
+        slides={[
+          { video: "/ideal-f.mp4", gradient: "from-[#5b4a8a] via-[#4a3a78] to-[#2a2142]", alt: "Ideal Founders reel" },
+          { video: "/stomach-f.mp4", gradient: "from-[#7fcbe6] via-[#8fd3ea] to-[#f4a3b8]", alt: "Stomach Founders reel" },
+          { video: "/franco-f.mp4", gradient: "from-[#e8899c] via-[#ee9ab0] to-[#cfa0d8]", alt: "Franco Founders reel" },
+        ]}
+      />
+
+      <SpotlightCarousel items={items} interval={4500} title="Our work in spotlight" />
 
       {/* Intro Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+      {/* <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
           Connecting Brands with Influencers for Unstoppable Partnerships that Drive Success.
         </h2>
-      </section>
+      </section> */}
+
+      <CurvedGallerySection
+        images={curvedreels}
+        heading="Setting the Scene, Serving the Story"
+        subtitle="Where beautiful spaces meet irresistible flavours."
+        className="bg-gray-300 text-gray-900 pb-8"
+      />
 
       {/* Services Preview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -110,10 +172,10 @@ export default function Home() {
         </div>
       </section>
 
-      <SpotlightCarousel items={items} interval={4500} title="Our work in spotlight" />
+ 
 
       {/* Amplifying Brand Reach */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      {/* <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-primary font-semibold tracking-wider text-sm uppercase mb-2 block">Our Approach</span>
@@ -127,10 +189,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Work Showcase - Sticky Gallery */}
-      <section className="py-24 bg-white">
+      {/* <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 mb-10 text-center">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
             OUR <span className="text-primary">WORK</span>
@@ -152,7 +214,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Full Width Team Image */}
       <div className="mb-20 px-4 md:px-6">
