@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { ArrowLeft, ArrowRight, Pause, Play } from "lucide-react";
 
 /**
@@ -150,16 +149,38 @@ function CardStack({ slides = defaultSlides, interval = 9500 }: { slides?: Slide
         </button>
       </div>
 
-      <div
-        className="absolute left-1/2 top-1/2 z-30 mt-5 flex -translate-x-1/2 items-center gap-3 rounded-full bg-black/70 px-4 py-2 text-[15px] font-semibold text-white backdrop-blur transition-opacity md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100"
-      >
-        <button aria-label="Previous" onClick={() => go(-1)}>
-          <ArrowLeft size={14} />
-        </button>
-        Swipe
-        <button aria-label="Next" onClick={() => go(1)}>
-          <ArrowRight size={14} />
-        </button>
+      <div className="absolute inset-x-0 bottom-[-46px] z-30 flex justify-center">
+        <div className="flex items-center gap-4 rounded-full bg-white/80 px-3 py-2 shadow-[0_10px_24px_rgba(0,0,0,0.12)] backdrop-blur-sm">
+          <button
+            aria-label="Previous reel"
+            onClick={() => go(-1)}
+            className="grid h-12 w-12 place-items-center rounded-full border border-[#d8d8d8] bg-white text-[#111111] transition-transform hover:scale-105"
+          >
+            <ArrowLeft size={18} strokeWidth={2.5} />
+          </button>
+
+          <div className="flex items-center gap-2">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                aria-label={`Go to reel ${index + 1}`}
+                onClick={() => setActive(index)}
+                className={`h-2.5 rounded-full transition-all duration-300 ${
+                  index === active ? "w-6 bg-[#171717]" : "w-2.5 bg-[#bcbcbc] hover:bg-[#8f8f8f]"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            aria-label="Next reel"
+            onClick={() => go(1)}
+            className="grid h-12 w-12 place-items-center rounded-full border border-[#d8d8d8] bg-white text-[#111111] transition-transform hover:scale-105"
+          >
+            <ArrowRight size={18} strokeWidth={2.5} />
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -170,8 +191,8 @@ function CardStack({ slides = defaultSlides, interval = 9500 }: { slides?: Slide
 export default function Hero({ slides }: { slides?: Slide[] }) {
   return (
     <section
-      className="relative overflow-hidden bg-[#f3f3f3] px-4 py-10 text-[#161616] antialiased sm:px-6 sm:py-12 lg:min-h-[760px] pb-8"
-    >
+      className="relative overflow-hidden h-[1000px] bg-[#f3f3f3] px-4 py-10 text-[#161616] antialiased sm:px-6 sm:py-12 lg:min-h-[760px] pb-8"
+    > 
       <Ribbon />
 
       <div className="relative z-10 mx-auto grid w-full max-w-[1252px] grid-cols-1 gap-8 sm:gap-10 lg:min-h-[626px] lg:grid-cols-[1fr_auto_1fr]">
