@@ -97,6 +97,8 @@ export default function Home() {
           { video: "/ideal-f.mp4", gradient: "from-[#5b4a8a] via-[#4a3a78] to-[#2a2142]", alt: "Ideal Founders reel" },
           { video: "/stomach-f.mp4", gradient: "from-[#7fcbe6] via-[#8fd3ea] to-[#f4a3b8]", alt: "Stomach Founders reel" },
           { video: "/franco-f.mp4", gradient: "from-[#e8899c] via-[#ee9ab0] to-[#cfa0d8]", alt: "Franco Founders reel" },
+          { video: "/f4.mp4", gradient: "from-[#e8899c] via-[#ee9ab0] to-[#cfa0d8]", alt: "Munazha Qazi Founders reel" },
+          { video: "/f5.mp4", gradient: "from-[#e8899c] via-[#ee9ab0] to-[#cfa0d8]", alt: "TP Chai Founders reel" },
         ]}
       />
 
